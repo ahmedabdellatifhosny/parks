@@ -102,6 +102,28 @@ ul {
   height: 80vh;
 }
 
+.platform {
+  padding: 50px 0;
+}
+.platform h2 {
+  color: #00712d;
+}
+.platform p {
+  color: #00712d;
+  font-weight: bold;
+  font-size: 30px;
+}
+.platform .abs-img {
+  position: absolute;
+  top: 79%;
+  width: 10%;
+  height: 200px;
+}
+.platform .abs-img img {
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
 .footer {
   padding: 20px 0 10px 0;
   background-color: #1a4d2e;
