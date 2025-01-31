@@ -20,6 +20,29 @@ ul {
   list-style: none;
 }
 
-.header {
-  background-color: red;
+.navbarmenu .bg-body-tertiary {
+  background: #1a4d2e !important;
+  top: 10px;
+  width: 80%;
+  margin: auto;
+  padding: 10px;
+  border-radius: 50px;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  -ms-border-radius: 50px;
+  -o-border-radius: 50px;
+}
+.navbarmenu .navbar-nav .nav-link {
+  color: #fff !important;
+}
+.navbarmenu .navbar-nav .active {
+  color: #ffc145 !important;
+  border-bottom: 2px solid #ffc145;
+}
+.navbarmenu .dropdown-toggle {
+  background-color: transparent;
+  border: none;
+}
+.navbarmenu .dropdown-toggle:after {
+  display: none;
 }/*# sourceMappingURL=globals.css.map */
