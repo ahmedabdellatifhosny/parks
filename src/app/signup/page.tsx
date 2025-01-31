@@ -6,7 +6,7 @@ export default function Page() {
     <div className="authContainer">
       <div className="form">
         <div className="logo">
-          <Image src={"/images/logo.png"} width={180} height={130} alt="logo" />
+          <Image src={"/images/logo-green.png"} width={180} height={130} alt="logo" />
         </div>
         <h2> إنشاء حساب</h2>
         <div className="w500 inputs">

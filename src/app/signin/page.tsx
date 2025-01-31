@@ -14,7 +14,12 @@ export default function Page() {
       </div>
       <div className="form">
         <div className="logo">
-          <Image src={"/images/logo.png"} width={180} height={130} alt="logo" />
+          <Image
+            src={"/images/logo-green.png"}
+            width={180}
+            height={130}
+            alt="logo"
+          />
         </div>
         <h2>تسجيل دخول</h2>
         <div className="w500 inputs">
@@ -68,7 +73,7 @@ export default function Page() {
             </button>
           </div>
           <div className="do">
-          ليس لديك حساب؟  <Link href="/signup">  أنشئ حساب</Link>
+            ليس لديك حساب؟ <Link href="/signup"> أنشئ حساب</Link>
           </div>
         </div>
       </div>

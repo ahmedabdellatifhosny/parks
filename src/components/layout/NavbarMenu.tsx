@@ -8,8 +8,13 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faUser } from "@fortawesome/free-solid-svg-icons/faUser";
 import Link from "next/link";
 import { useState } from "react";
+import { usePathname } from "next/navigation";
 
 export default function NavbarMenu() {
+  const pathname = usePathname();
+    if (pathname === "/signin" || pathname === "/signup") {
+      return null;
+    }
   const [activeLink, setActiveLink] = useState("#home");
   return (
     <section className="navbarmenu">
