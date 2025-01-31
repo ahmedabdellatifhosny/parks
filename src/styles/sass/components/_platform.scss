@@ -1,0 +1,22 @@
+.platform {
+  padding: 50px 0;
+  h2 {
+    color: #00712d;
+    width: 50%;
+    margin: 10px auto;
+  }
+  p {
+    color: #00712d;
+    font-weight: bold;
+    font-size: 30px;
+  }
+  .abs-img {
+    position: absolute;
+    top: 79%;
+    width: 10%;
+    height: 250px;
+    img {
+      object-fit: contain;
+    }
+  }
+}
