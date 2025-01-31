@@ -41,57 +41,26 @@ ul {
   list-style: none;
 }
 
-.footer {
+.primary-navbar {
+  border-bottom: 2px solid rgba(34, 84, 170, 0.5019607843);
+}
+.primary-navbar .navbar {
   padding: 20px 0;
-  background-color: #1e3b55;
-  color: #fff;
 }
-.footer .footer-logo {
-  color: #abcaff;
+.primary-navbar .navbar a {
+  color: #222;
+  text-align: right;
 }
-.footer .footer-area-we-serve h3,
-.footer .footer-services h3,
-.footer .footer-services h3,
-.footer .footer-contact-information h3,
-.footer .footer-terms-condition h3 {
-  color: #abcaff;
-  text-decoration: underline;
-  text-underline-offset: 10px;
-  margin-bottom: 1.6rem;
+.primary-navbar .navbar .navbar-brand {
+  font-size: 40px;
+  font-weight: bold;
+  color: #222;
 }
-.footer .info .sebd-mail .fa-envelope {
-  color: #fff;
-  width: 30px !important;
-  height: 30px;
+.primary-navbar .navbar .nav-link {
+  padding: 0;
 }
-.footer .info ul li .fa-linkedin {
-  color: #fff;
-  width: 30px;
-  height: 30px;
-}
-.footer .footer-location {
-  margin: 20px 0;
-}
-.footer .footer-location .footer-location-box {
-  background-color: rgba(85, 135, 221, 0.5019607843);
-  padding: 10px;
-  border-radius: 10px;
-  -webkit-border-radius: 10px;
-  -moz-border-radius: 10px;
-  -ms-border-radius: 10px;
-  -o-border-radius: 10px;
-  margin: 15px 0;
-}
-.footer .footer-location .footer-location-box .fa-x {
-  color: #fff;
-  width: 30px;
-  height: 30px;
-  margin-left: 10px;
-}
-
-nav {
-  position: fixed;
-  top: 20px;
+.primary-navbar .navbar .dropdown .dropdown-toggle::after {
+  display: none;
 }
 
 .authContainer {
