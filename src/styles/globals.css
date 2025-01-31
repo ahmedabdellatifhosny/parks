@@ -113,6 +113,8 @@ ul {
 }
 .platform h2 {
   color: #00712d;
+  width: 50%;
+  margin: 10px auto;
 }
 .platform p {
   color: #00712d;
