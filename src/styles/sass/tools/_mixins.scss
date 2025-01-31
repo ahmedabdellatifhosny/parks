@@ -1,0 +1,20 @@
+@mixin flex() {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@mixin boxShadow() {
+  box-shadow: 0 0 10px #001f5d2e;
+}
+
+@mixin circle($s) {
+  width: $s;
+  height: $s;
+  border-radius: 50%;
+}
+
+@mixin noBorder() {
+  border: none;
+  outline: none;
+  background-color: transparent;
+}

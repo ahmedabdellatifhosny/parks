@@ -1,0 +1,36 @@
+@import url("https://fonts.googleapis.com/css2?family=El+Messiri:wght@400..700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-family: "El Messiri", serif;
+}
+body {
+  font-family: "El Messiri", serif;
+}
+a {
+  text-decoration: none;
+  color: #000;
+}
+button {
+  @include noBorder();
+  cursor: pointer;
+}
+
+::-webkit-scrollbar {
+  width: 7px;
+  background-color: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background-color: $primary-color;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+
+ul {
+  list-style: none;
+}
