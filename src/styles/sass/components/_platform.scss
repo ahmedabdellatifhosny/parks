@@ -1,20 +1,35 @@
 .platform {
-  padding: 50px 0;
+  padding: 50px 0 100px 0;
+  position: relative;
   h2 {
     color: #00712d;
-    width: 50%;
+    max-width: 500px;
     margin: 10px auto;
+    font-size: 1.7rem;
+    line-height: 1.5;
+    position: relative;
+    z-index: 5;
   }
   p {
+    z-index: 50;
     color: #00712d;
     font-weight: bold;
     font-size: 30px;
+    position: relative;
+    z-index: 5;
   }
   .abs-img {
     position: absolute;
-    top: 79%;
-    width: 10%;
-    height: 250px;
+    top: -60px;
+    width: 200px;
+    height: 300px;
+    @media (max-width: 1000px) {
+      width: 100px;
+      height: 200px;
+      top: -50px;
+    }
+    right: 0;
+    z-index: 4;
     img {
       object-fit: contain;
     }
