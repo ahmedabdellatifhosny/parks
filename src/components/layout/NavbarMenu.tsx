@@ -2,13 +2,15 @@
 import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
-import Dropdown from "react-bootstrap/Dropdown";
 import Image from "next/image";
 import { faGlobe } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faUser } from "@fortawesome/free-solid-svg-icons/faUser";
+import Link from "next/link";
+import { useState } from "react";
 
 export default function NavbarMenu() {
+  const [activeLink, setActiveLink] = useState("#home");
   return (
     <section className="navbarmenu">
       <Container>
@@ -19,13 +21,41 @@ export default function NavbarMenu() {
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="mx-auto">
-              <Nav.Link href="#home" className="active">
+              <Link
+                href="#home"
+                className={activeLink === "#home" ? "active" : ""}
+                onClick={() => setActiveLink("#home")}
+              >
                 الصفحه الرئيسية
-              </Nav.Link>
-              <Nav.Link href="#link">الحدائق المفضلة</Nav.Link>
-              <Nav.Link href="#link">اخبار الحدائق والفاعليات </Nav.Link>
-              <Nav.Link href="#link">الحجوزات</Nav.Link>
-              <Nav.Link href="#link">الخريطة</Nav.Link>
+              </Link>
+              <Link
+                href="#favorites"
+                className={activeLink === "#favorites" ? "active" : ""}
+                onClick={() => setActiveLink("#favorites")}
+              >
+                الحدائق المفضلة
+              </Link>
+              <Link
+                href="#news"
+                className={activeLink === "#news" ? "active" : ""}
+                onClick={() => setActiveLink("#news")}
+              >
+                اخبار الحدائق والفاعليات{" "}
+              </Link>
+              <Link
+                href="#reservations"
+                className={activeLink === "#reservations" ? "active" : ""}
+                onClick={() => setActiveLink("#reservations")}
+              >
+                الحجوزات
+              </Link>
+              <Link
+                href="#map"
+                className={activeLink === "#map" ? "active" : ""}
+                onClick={() => setActiveLink("#map")}
+              >
+                الخريطة
+              </Link>
             </Nav>
             <ul className="d-flex align-items-center mt-3">
               <li>
@@ -36,8 +66,10 @@ export default function NavbarMenu() {
               </li>
               <li>
                 <div className="logs">
-                  <FontAwesomeIcon icon={faUser} />
-                  <span className="me-2"> تسجيل الدخول</span>
+                  <Link href="/signin">
+                    <FontAwesomeIcon icon={faUser} />
+                    <span className="me-2"> تسجيل الدخول</span>
+                  </Link>
                 </div>
               </li>
             </ul>

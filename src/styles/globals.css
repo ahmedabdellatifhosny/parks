@@ -13,7 +13,9 @@ body {
 
 a {
   text-decoration: none;
-  color: #000;
+  color: #fff;
+  margin-left: 10px;
+  margin-right: 10px;
 }
 
 ul {
@@ -52,9 +54,6 @@ ul {
 .navbarmenu .langs:hover {
   color: #ffc145;
   cursor: pointer;
-}
-.navbarmenu .logs {
-  color: #fff;
 }
 .navbarmenu .logs:hover {
   color: #ffc145;
