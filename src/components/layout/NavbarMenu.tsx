@@ -21,9 +21,9 @@ export default function NavbarMenu() {
     <section className="navbarmenu">
       <Container>
         <Navbar expand="lg" className="bg-body-tertiary" fixed="top">
-          <Navbar.Brand href="/">
+          <Link href="/">
             <Image src="/images/logo.png" alt="logo" width={150} height={80} />
-          </Navbar.Brand>
+          </Link>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="mx-auto">
