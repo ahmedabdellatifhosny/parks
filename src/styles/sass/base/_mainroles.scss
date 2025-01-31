@@ -15,6 +15,9 @@ a {
   margin-left: 10px;
   margin-right: 10px;
 }
+button{
+  @include noBorder();
+}
 
 ul {
   list-style: none;
