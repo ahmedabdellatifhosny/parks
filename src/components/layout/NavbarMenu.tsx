@@ -11,7 +11,7 @@ import { useState } from "react";
 import { usePathname } from "next/navigation";
 
 export default function NavbarMenu() {
-  const [activeLink, setActiveLink] = useState("#home");
+  const [activeLink, setActiveLink] = useState("home");
   const pathname = usePathname();
   if (pathname === "/signin" || pathname === "/signup") {
     return null;
@@ -21,44 +21,44 @@ export default function NavbarMenu() {
     <section className="navbarmenu">
       <Container>
         <Navbar expand="lg" className="bg-body-tertiary" fixed="top">
-          <Navbar.Brand href="#home">
+          <Navbar.Brand href="/">
             <Image src="/images/logo.png" alt="logo" width={150} height={80} />
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="mx-auto">
               <Link
-                href="#home"
-                className={activeLink === "#home" ? "active" : ""}
-                onClick={() => setActiveLink("#home")}
+                href="/"
+                className={activeLink === "home" ? "active" : ""}
+                onClick={() => setActiveLink("home")}
               >
                 الصفحه الرئيسية
               </Link>
               <Link
-                href="#favorites"
-                className={activeLink === "#favorites" ? "active" : ""}
-                onClick={() => setActiveLink("#favorites")}
+                href="/"
+                className={activeLink === "favorites" ? "active" : ""}
+                onClick={() => setActiveLink("favorites")}
               >
                 الحدائق المفضلة
               </Link>
               <Link
-                href="#news"
-                className={activeLink === "#news" ? "active" : ""}
-                onClick={() => setActiveLink("#news")}
+                href="/"
+                className={activeLink === "news" ? "active" : ""}
+                onClick={() => setActiveLink("news")}
               >
                 اخبار الحدائق والفاعليات{" "}
               </Link>
               <Link
-                href="#reservations"
-                className={activeLink === "#reservations" ? "active" : ""}
-                onClick={() => setActiveLink("#reservations")}
+                href="/"
+                className={activeLink === "reservations" ? "active" : ""}
+                onClick={() => setActiveLink("reservations")}
               >
                 الحجوزات
               </Link>
               <Link
-                href="#map"
-                className={activeLink === "#map" ? "active" : ""}
-                onClick={() => setActiveLink("#map")}
+                href="/"
+                className={activeLink === "map" ? "active" : ""}
+                onClick={() => setActiveLink("map")}
               >
                 الخريطة
               </Link>
