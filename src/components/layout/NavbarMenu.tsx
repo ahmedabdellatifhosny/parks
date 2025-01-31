@@ -11,11 +11,11 @@ import { useState } from "react";
 import { usePathname } from "next/navigation";
 
 export default function NavbarMenu() {
+  const [activeLink, setActiveLink] = useState("#home");
   const pathname = usePathname();
     if (pathname === "/signin" || pathname === "/signup") {
       return null;
     }
-  const [activeLink, setActiveLink] = useState("#home");
   return (
     <section className="navbarmenu">
       <Container>
