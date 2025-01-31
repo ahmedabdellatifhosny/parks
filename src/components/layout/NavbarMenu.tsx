@@ -12,9 +12,9 @@ import { usePathname } from "next/navigation";
 
 export default function NavbarMenu() {
   const pathname = usePathname();
-    if (pathname === "/signin" || pathname === "/signup") {
-      return null;
-    }
+  if (pathname === "/signin" || pathname === "/signup") {
+    return null;
+  }
   const [activeLink, setActiveLink] = useState("#home");
   return (
     <section className="navbarmenu">
