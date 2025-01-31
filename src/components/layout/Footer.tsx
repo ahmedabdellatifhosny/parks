@@ -2,6 +2,9 @@
 import { usePathname } from "next/navigation";
 import { Container, Row, Col } from "react-bootstrap";
 import Image from "next/image";
+import { faFacebook, faInstagram, faLinkedin, faYoutube } from "@fortawesome/free-brands-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import Link from "next/link";
 
 export default function Footer() {
   const pathname = usePathname();
@@ -45,10 +48,52 @@ export default function Footer() {
             </ul>
           </Col>
           <Col md={3}>
-         <Image src={"/images/hero/logo2.png"} alt="logo" width={323} height={157} />
+            <Image
+              src={"/images/hero/logo2.png"}
+              alt="logo"
+              width={323}
+              height={157}
+            />
           </Col>
         </Row>
       </Container>
+      <div className="copy">
+        <Container>
+          <Row>
+            <Col md={6}>
+              <div className="copyright d-flex justify-content-start">
+                <p>جميع الحقوق محفوظه ترفيهي &copy; 2025</p>
+              </div>
+            </Col>
+            <Col md={6}>
+              <div className="socialmedia-icons">
+                <ul className="d-flex justify-content-end">
+                  <li>
+                    <Link href={"#"}>
+                      <FontAwesomeIcon icon={faFacebook} />
+                    </Link>
+                  </li>
+                  <li>
+                    <Link href={"#"}>
+                      <FontAwesomeIcon icon={faInstagram} />
+                    </Link>
+                  </li>
+                  <li>
+                    <Link href={"#"}>
+                      <FontAwesomeIcon icon={faYoutube} />
+                    </Link>
+                  </li>
+                  <li>
+                    <Link href={"#"}>
+                      <FontAwesomeIcon icon={faLinkedin} />
+                    </Link>
+                  </li>
+                </ul>
+              </div>
+            </Col>
+          </Row>
+        </Container>
+      </div>
     </section>
   );
 }

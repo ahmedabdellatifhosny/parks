@@ -103,7 +103,7 @@ ul {
 }
 
 .footer {
-  padding: 50px 0;
+  padding: 20px 0 10px 0;
   background-color: #1a4d2e;
   color: #fff;
 }
@@ -119,4 +119,10 @@ ul {
 .footer .mark img {
   -o-object-fit: cover;
      object-fit: cover;
+}
+.footer .copy {
+  text-align: center;
+  border-top: 1px solid #fff;
+  margin-top: 20px;
+  padding-top: 25px;
 }/*# sourceMappingURL=globals.css.map */
