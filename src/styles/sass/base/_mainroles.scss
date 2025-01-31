@@ -13,23 +13,6 @@ a {
   text-decoration: none;
   color: #000;
 }
-button {
-  @include noBorder();
-  cursor: pointer;
-}
-
-::-webkit-scrollbar {
-  width: 7px;
-  background-color: transparent;
-}
-::-webkit-scrollbar-thumb {
-  background-color: $primary-color;
-  border-radius: 10px;
-  -webkit-border-radius: 10px;
-  -moz-border-radius: 10px;
-  -ms-border-radius: 10px;
-  -o-border-radius: 10px;
-}
 
 ul {
   list-style: none;

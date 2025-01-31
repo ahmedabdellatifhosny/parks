@@ -1,11 +1,6 @@
 @import "./sass/tools/variables";
 @import "./sass/tools/mixins";
 @import "./sass/tools/functions";
-@import "./sass/layout/mediaquery";
 @import "./sass/base/mainroles";
-
 @import "./sass/components/header";
-
-//pages
-@import "./sass/pages/home";
-@import "./sass/pages/auth";
+@import "./sass/layout/mediaquery";

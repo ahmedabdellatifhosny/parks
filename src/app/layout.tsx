@@ -1,4 +1,5 @@
 import Footer from "@/components/layout/Footer";
+import "bootstrap/dist/css/bootstrap.min.css";
 import NavbarMenu from "@/components/layout/NavbarMenu";
 import "../styles/globals.scss";
 import { Metadata } from "next/dist/lib/metadata/types/metadata-interface";
@@ -22,14 +23,6 @@ export default function RootLayout({
   }
   return (
     <html lang="ar" dir="rtl">
-      <head>
-        <link rel="icon" href="/images/logo.png" />
-        <link rel="apple-touch-icon" href="/images/logo.png" />
-        <link
-          rel="stylesheet"
-          href="https://site-assets.fontawesome.com/releases/v6.4.2/css/all.css"
-        />
-      </head>
       <body cz-shortcut-listen="false">
         <NavbarMenu />
         {children}
