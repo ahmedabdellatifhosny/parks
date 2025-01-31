@@ -45,4 +45,18 @@ ul {
 }
 .navbarmenu .dropdown-toggle:after {
   display: none;
+}
+.navbarmenu .langs {
+  color: #fff;
+}
+.navbarmenu .langs:hover {
+  color: #ffc145;
+  cursor: pointer;
+}
+.navbarmenu .logs {
+  color: #fff;
+}
+.navbarmenu .logs:hover {
+  color: #ffc145;
+  cursor: pointer;
 }/*# sourceMappingURL=globals.css.map */

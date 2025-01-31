@@ -27,42 +27,20 @@ export default function NavbarMenu() {
               <Nav.Link href="#link">الحجوزات</Nav.Link>
               <Nav.Link href="#link">الخريطة</Nav.Link>
             </Nav>
-            <div className="langs">
-              <Dropdown>
-                <Dropdown.Toggle variant="success" id="dropdown-basic">
+            <ul className="d-flex align-items-center mt-3">
+              <li>
+                <div className="langs ms-2">
                   <FontAwesomeIcon icon={faGlobe} />
                   <span className="me-2">اللغة العربية</span>
-                </Dropdown.Toggle>
-
-                <Dropdown.Menu>
-                  <Dropdown.Item href="#/action-1">Action</Dropdown.Item>
-                  <Dropdown.Item href="#/action-2">
-                    Another action
-                  </Dropdown.Item>
-                  <Dropdown.Item href="#/action-3">
-                    Something else
-                  </Dropdown.Item>
-                </Dropdown.Menu>
-              </Dropdown>
-            </div>
-            <div className="logs">
-              <Dropdown>
-                <Dropdown.Toggle variant="success" id="dropdown-basic">
+                </div>
+              </li>
+              <li>
+                <div className="logs">
                   <FontAwesomeIcon icon={faUser} />
                   <span className="me-2"> تسجيل الدخول</span>
-                </Dropdown.Toggle>
-
-                <Dropdown.Menu>
-                  <Dropdown.Item href="#/action-1">Action</Dropdown.Item>
-                  <Dropdown.Item href="#/action-2">
-                    Another action
-                  </Dropdown.Item>
-                  <Dropdown.Item href="#/action-3">
-                    Something else
-                  </Dropdown.Item>
-                </Dropdown.Menu>
-              </Dropdown>
-            </div>
+                </div>
+              </li>
+            </ul>
           </Navbar.Collapse>
         </Navbar>
       </Container>

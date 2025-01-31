@@ -27,4 +27,18 @@
   .dropdown-toggle:after {
     display: none;
   }
+  .langs{
+    color: #fff;
+    &:hover{
+      color: #ffc145;
+      cursor: pointer;
+    }
+  }
+  .logs{
+    color: #fff;
+    &:hover{
+      color: #ffc145;
+      cursor: pointer;
+    }
+  }
 }
