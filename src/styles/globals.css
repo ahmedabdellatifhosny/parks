@@ -35,6 +35,71 @@ ul {
   list-style: none;
 }
 
+.header {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -400%);
+  -webkit-transform: translate(-50%, -400%);
+  -moz-transform: translate(-50%, -400%);
+  -ms-transform: translate(-50%, -400%);
+  -o-transform: translate(-50%, -400%);
+  z-index: 8;
+  color: #fff;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  font-size: 1.5rem;
+}
+.header h4 {
+  color: #feffd2;
+  font-size: 20px;
+}
+
+.search-form {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  width: 100%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  z-index: 999999;
+}
+.search-form input {
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border: 1px solid #1a4d2e;
+  padding: 10px 10px 10px 50px;
+  margin-right: 10px;
+}
+.search-form input .search-btn {
+  position: relative;
+}
+.search-form .fa-gear {
+  font-size: 10px;
+  position: absolute;
+  top: 20px;
+}
+.search-form .fa-magnifying-glass {
+  color: #00712d;
+  position: absolute;
+  top: 32%;
+  left: 39%;
+}
+.search-form .btn-success {
+  display: flex;
+  align-items: center;
+  padding: 13px 15px !important;
+}
+
 .navbarmenu {
   position: relative;
   z-index: 10;
