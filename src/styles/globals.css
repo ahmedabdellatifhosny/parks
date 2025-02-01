@@ -455,6 +455,53 @@ ul {
   margin-top: 3px;
 }
 
+.parks {
+  padding: 50px 0;
+}
+.parks .first-park {
+  width: 90%;
+  margin: 50px auto;
+  padding: 50px 0;
+  border: 1px dotted #ccc;
+  border-radius: 10px;
+}
+.parks .first-park img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  -webkit-clip-path: polygon(50% 0%, 100% 0, 100% 35%, 100% 100%, 80% 100%, 32% 100%, 32% 70%, 0% 70%, 0 32%, 0 0);
+          clip-path: polygon(50% 0%, 100% 0, 100% 35%, 100% 100%, 80% 100%, 32% 100%, 32% 70%, 0% 70%, 0 32%, 0 0);
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+.parks .second-park {
+  padding: 50px 0;
+  border: 1px dotted #ccc;
+  width: 90%;
+  margin: auto;
+  border-radius: 10px;
+}
+.parks .second-park img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  -webkit-clip-path: polygon(50% 0%, 100% 0, 100% 35%, 100% 70%, 73% 70%, 73% 100%, 21% 100%, 0 100%, 0% 35%, 0 0);
+          clip-path: polygon(50% 0%, 100% 0, 100% 35%, 100% 70%, 73% 70%, 73% 100%, 21% 100%, 0 100%, 0% 35%, 0 0);
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+.parks h3 {
+  color: #00712d;
+  margin-bottom: 10px;
+}
+.parks h3 span {
+  color: #000;
+}
+
 .footer {
   padding: 20px 0 10px 0;
   background-color: #1a4d2e;

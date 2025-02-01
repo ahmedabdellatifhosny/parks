@@ -1,7 +1,6 @@
 import Platform from "../components/Platform";
 import Hero from "../components/Hero";
 import Nearest from "../components/Nearest";
-
 import "bootstrap/dist/css/bootstrap.min.css";
 import FamousParks from "../components/FamousParks";
 import News from "../components/News";
