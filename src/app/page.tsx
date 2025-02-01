@@ -7,6 +7,7 @@ import FamousParks from "../components/FamousParks";
 import News from "../components/News";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import AddNewPark from "@/components/AddNewPark";
 
 export default function Home() {
   return (
@@ -16,6 +17,7 @@ export default function Home() {
       <Nearest />
       <News />
       <FamousParks />
+      <AddNewPark />
     </>
   );
 }
