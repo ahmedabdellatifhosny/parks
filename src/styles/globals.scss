@@ -4,9 +4,11 @@
 @import "./sass/base/mainroles";
 @import "./sass/components/header";
 @import "./sass/components/platform";
-@import "./sass/components/footer";
 @import "./sass/layout/_mediaquery";
+@import "./sass/components/nearest";
+@import "./sass/components/famousparks";
+@import "./sass/components/news";
 
+@import "./sass/components/footer";
 //pages
 @import "./sass/pages/auth";
-

@@ -132,6 +132,104 @@ ul {
      object-fit: contain;
 }
 
+.nearest {
+  padding: 50px 0;
+}
+.nearest .box {
+  background-color: #fff;
+  box-shadow: 10px 10px 10px 10px #d3d3d3;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  width: 90%;
+  margin: 10px;
+  cursor: pointer;
+}
+.nearest .box img {
+  padding: 20px;
+  margin: 10px auto;
+  transition: all 0.5s ease-in-out;
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -ms-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+}
+.nearest .box img:hover {
+  transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  -o-transform: scale(1.1);
+}
+.nearest .box .fa-star {
+  color: #ffdd55;
+}
+.nearest .like {
+  position: absolute;
+}
+.nearest .read-more {
+  cursor: pointer;
+}
+.nearest .read-more p {
+  color: #1a4d2e;
+}
+.nearest .read-more p:hover {
+  color: #ffdd55;
+}
+
+.famous-parks {
+  padding: 50px 0;
+}
+.famous-parks .box {
+  background-color: #fff;
+  box-shadow: 10px 10px 10px 10px #d3d3d3;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  width: 90%;
+  margin: 10px;
+  cursor: pointer;
+}
+.famous-parks .box img {
+  padding: 20px;
+  margin: 10px auto;
+  transition: all 0.5s ease-in-out;
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -ms-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+}
+.famous-parks .box img:hover {
+  transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  -o-transform: scale(1.1);
+}
+.famous-parks .box .fa-star {
+  color: #ffdd55;
+}
+.famous-parks .like {
+  position: absolute;
+}
+.famous-parks .read-more {
+  cursor: pointer;
+}
+.famous-parks .read-more p {
+  color: #1a4d2e;
+}
+.famous-parks .read-more p:hover {
+  color: #ffdd55;
+}
+
+.news {
+  background-color: #feffd2;
+}
+
 .footer {
   padding: 20px 0 10px 0;
   background-color: #1a4d2e;
