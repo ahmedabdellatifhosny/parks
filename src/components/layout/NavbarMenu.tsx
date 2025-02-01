@@ -13,7 +13,7 @@ import { usePathname } from "next/navigation";
 export default function NavbarMenu() {
   const [activeLink, setActiveLink] = useState("home");
   const pathname = usePathname();
-  if (pathname === "/signin" || pathname === "/signup") {
+  if (pathname === "/signin" || pathname === "/signup" || pathname === "/forgot-password") {
     return null;
   }
 
