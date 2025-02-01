@@ -341,7 +341,7 @@ ul {
   background-color: #feffd2;
 }
 .news .box {
-  padding: 10px;
+  padding: 10px 10px 0 10px;
   background-color: #fff;
   box-shadow: 10px 10px 10px 10px #d3d3d3;
   border-radius: 10px;
@@ -362,13 +362,16 @@ ul {
   line-height: 30px;
   padding: 10px 0;
 }
-.news .box .header-img {
+.news .box .box-header {
+  padding: 10px 0;
+}
+.news .box .box-header .header-img {
   position: relative;
   width: 50%;
   height: 100px;
   margin-left: 10px;
 }
-.news .box img {
+.news .box .box-header .header-img img {
   border-radius: 30px;
   -webkit-border-radius: 30px;
   -moz-border-radius: 30px;
@@ -379,6 +382,17 @@ ul {
 }
 .news .box .title {
   text-align: end;
+}
+.news .box .title h5 {
+  font-size: 18px;
+  margin-bottom: 0;
+}
+.news .read-more p {
+  color: #1a4d2e;
+  cursor: pointer;
+}
+.news .read-more p:hover {
+  color: #ffc145;
 }
 
 .footer {
