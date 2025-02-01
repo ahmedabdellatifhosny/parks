@@ -20,6 +20,7 @@ export default function Nearest() {
     <div className="nearest">
       <div className="slider-container text-center mb-5">
         <Container>
+          <h3 className="text-end mb-5"> حدائق بالقرب منك</h3>
           <Slider {...settings}>
             <div className="box">
               <Image

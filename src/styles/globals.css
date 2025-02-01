@@ -247,6 +247,9 @@ ul {
 .nearest {
   padding: 50px 0;
 }
+.nearest h3 {
+  color: #00712d;
+}
 .nearest .box {
   background-color: #fff;
   box-shadow: 10px 10px 10px 10px #d3d3d3;
@@ -294,6 +297,9 @@ ul {
 .famous-parks {
   padding: 50px 0;
 }
+.famous-parks h3 {
+  color: #00712d;
+}
 .famous-parks .box {
   background-color: #fff;
   box-shadow: 10px 10px 10px 10px #d3d3d3;
@@ -340,6 +346,9 @@ ul {
 
 .news {
   background-color: #feffd2;
+}
+.news h3 {
+  color: #00712d;
 }
 .news .box {
   padding: 10px 10px 0 10px;

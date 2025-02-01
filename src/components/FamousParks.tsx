@@ -19,7 +19,9 @@ export default function FamousParks() {
   return (
     <div className="famous-parks">
       <div className="slider-container text-center mb-5">
+        
         <Container>
+        <h3 className="text-end mb-5">حدائق مشهوره حول العالم</h3>
           <Slider {...settings}>
             <div className="box">
               <Image
