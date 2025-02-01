@@ -72,8 +72,11 @@
     @media (max-width: 1000px) {
       width: calc(100% - 40px);
     }
-    margin: auto;
+
     padding: 0 10px;
+    border-radius: 50px;
+    margin: auto;
+
     border-radius: 50px;
     -webkit-border-radius: 50px;
     -moz-border-radius: 50px;
