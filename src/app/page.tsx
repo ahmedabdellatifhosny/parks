@@ -8,6 +8,7 @@ import News from "../components/News";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import AddNewPark from "@/components/AddNewPark";
+import Parks from "@/components/Parks";
 
 export default function Home() {
   return (
@@ -18,6 +19,7 @@ export default function Home() {
       <News />
       <FamousParks />
       <AddNewPark />
+      <Parks />
     </>
   );
 }
