@@ -42,7 +42,7 @@ export default function NavbarMenu() {
                 الحدائق المفضلة
               </Link>
               <Link
-                href="/"
+                href="/news-and-events"
                 className={activeLink === "news" ? "active" : ""}
                 onClick={() => setActiveLink("news")}
               >
