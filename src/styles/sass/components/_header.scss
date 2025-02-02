@@ -15,26 +15,18 @@
   flex-direction: column;
   font-size: 1.5rem;
   h4 {
-    color: #feffd2;
+    color: $text-gray;
     font-size: 20px;
     line-height: 30px;
   }
   p {
-    color: #feffd2;
+    color: $text-gray;
   }
 }
 .search-form {
-  display: flex;
-  justify-content: center;
-  position: absolute;
-  top: 50%;
-  left: 50%;
+  @include flex();
   width: 100%;
-  transform: translate(-50%, -50%);
-  -webkit-transform: translate(-50%, -50%);
-  -moz-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  -o-transform: translate(-50%, -50%);
+  @include centerPosition();
   z-index: 999999;
   input {
     border-radius: 5px;
@@ -42,7 +34,7 @@
     -moz-border-radius: 5px;
     -ms-border-radius: 5px;
     -o-border-radius: 5px;
-    border: 1px solid #1a4d2e;
+    border: 1px solid $dark-primary-color;
     padding: 10px 10px 10px 50px;
     margin-right: 10px;
     .search-btn {
