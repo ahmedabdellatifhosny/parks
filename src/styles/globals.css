@@ -522,6 +522,9 @@ ul {
 }
 .apps h3 {
   color: #00712d;
+  font-size: 30px;
+  width: 45%;
+  margin: auto;
 }
 
 .footer {
