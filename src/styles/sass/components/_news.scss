@@ -1,17 +1,13 @@
 .news {
   background-color: #feffd2;
   h3 {
-    color: #00712d;
+    color: $primary-color;
   }
   .box {
     padding: 10px 10px 0 10px;
     background-color: #fff;
     box-shadow: 10px 10px 10px 10px #d3d3d3;
-    border-radius: 10px;
-    -webkit-border-radius: 10px;
-    -moz-border-radius: 10px;
-    -ms-border-radius: 10px;
-    -o-border-radius: 10px;
+    @include borderRedius(10px);
     width: 90%;
     margin: 10px;
     cursor: pointer;
@@ -32,11 +28,7 @@
         height: 100px;
         margin-left: 10px;
         img {
-          border-radius: 30px;
-          -webkit-border-radius: 30px;
-          -moz-border-radius: 30px;
-          -ms-border-radius: 30px;
-          -o-border-radius: 30px;
+          @include borderRedius(30px);
           object-fit: cover;
         }
       }
@@ -52,10 +44,10 @@
   }
   .read-more {
     p {
-      color: #1a4d2e;
+      color: $dark-primary-color;
       cursor: pointer;
       &:hover {
-        color: #ffc145;
+        color: $hover-color;
       }
     }
   }

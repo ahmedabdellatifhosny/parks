@@ -1,7 +1,7 @@
 .nearest {
   padding: 50px 0;
   h3 {
-    color: #00712d;
+    color: $primary-color;
   }
   .box {
     background-color: #fff;
@@ -23,15 +23,11 @@
       -ms-transition: all 0.5s ease-in-out;
       -o-transition: all 0.5s ease-in-out;
       &:hover {
-        transform: scale(1.1);
-        -webkit-transform: scale(1.1);
-        -moz-transform: scale(1.1);
-        -ms-transform: scale(1.1);
-        -o-transform: scale(1.1);
+        @include transformScale();
       }
     }
     .fa-star {
-      color: #ffdd55;
+      color: $hover-color;
     }
   }
   .like {
@@ -40,11 +36,10 @@
   .read-more {
     cursor: pointer;
     p {
-      color: #1a4d2e;
+      color: $dark-primary-color;
       &:hover {
-        color: #ffdd55;
+        color: $hover-color;
       }
     }
-   
   }
 }

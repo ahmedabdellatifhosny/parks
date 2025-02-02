@@ -284,7 +284,7 @@ ul {
   -o-transform: scale(1.1);
 }
 .nearest .box .fa-star {
-  color: #ffdd55;
+  color: #ffc145;
 }
 .nearest .like {
   position: absolute;
@@ -296,7 +296,7 @@ ul {
   color: #1a4d2e;
 }
 .nearest .read-more p:hover {
-  color: #ffdd55;
+  color: #ffc145;
 }
 
 .famous-parks {
