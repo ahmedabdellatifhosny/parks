@@ -56,7 +56,7 @@
   }
 
   .fa-magnifying-glass {
-    color: #00712d;
+    color: $primary-color;
     position: absolute;
     top: 32%;
     left: 39%;
@@ -71,7 +71,7 @@
   position: relative;
   z-index: 10;
   .bg-body-tertiary {
-    background: #1a4d2e !important;
+    background: $dark-primary-color !important;
     top: 10px;
     width: calc(100% - 100px);
     @media (max-width: 1000px) {
@@ -93,8 +93,8 @@
       color: #fff !important;
     }
     .active {
-      color: #ffc145 !important;
-      border-bottom: 2px solid #ffc145;
+      color: $hover-color !important;
+      border-bottom: 2px solid $hover-color;
     }
   }
   .dropdown-toggle {
@@ -107,13 +107,13 @@
   .langs {
     color: #fff;
     &:hover {
-      color: #ffc145;
+      color: $hover-color;
       cursor: pointer;
     }
   }
   .logs {
     &:hover {
-      color: #ffc145;
+      color: $hover-color;
       cursor: pointer;
     }
   }
