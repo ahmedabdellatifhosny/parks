@@ -31,12 +31,15 @@
   }
   .add-btn {
     position: relative;
-    padding-bottom: 30px;
+    padding-bottom: 10px;
     .btn-warning {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-
+      width: 20%;
+      margin: auto;
+      @include flex();
+      font-weight: 500;
+      height: 47px;
+      border-radius: 8px;
+      font-size: 1rem;
       span {
         margin-left: 10px;
       }

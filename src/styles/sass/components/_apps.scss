@@ -1,10 +1,37 @@
 .apps {
   background-color: $background-section;
   padding: $big-sections-padding;
+  position: relative;
+  height: 800px;
   h3 {
     color: $primary-color;
     font-size: 30px;
     width: 45%;
-    margin: auto;
+    margin:20px  auto;
+  }
+  .background-box {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    background-color: $primary-color;
+    @include borderRedius(10px);
+    right: 42%;
+    img{
+      position: absolute; 
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+
+    }
+    
+  }
+  ul {
+    margin-top: 30px;
+    li {
+      p {
+        color: $primary-color;
+        font-weight: bold;
+      }
+    }
   }
 }

@@ -441,12 +441,18 @@ ul {
 }
 .addnewpark .add-btn {
   position: relative;
-  padding-bottom: 30px;
+  padding-bottom: 10px;
 }
 .addnewpark .add-btn .btn-warning {
+  width: 20%;
+  margin: auto;
   display: flex;
   justify-content: center;
   align-items: center;
+  font-weight: 500;
+  height: 47px;
+  border-radius: 8px;
+  font-size: 1rem;
 }
 .addnewpark .add-btn .btn-warning span {
   margin-left: 10px;
@@ -519,12 +525,39 @@ ul {
 .apps {
   background-color: #feffd2;
   padding: 50px 0;
+  position: relative;
+  height: 800px;
 }
 .apps h3 {
   color: #00712d;
   font-size: 30px;
   width: 45%;
-  margin: auto;
+  margin: 20px auto;
+}
+.apps .background-box {
+  position: relative;
+  width: 300px;
+  height: 300px;
+  background-color: #00712d;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  right: 42%;
+}
+.apps .background-box img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.apps ul {
+  margin-top: 30px;
+}
+.apps ul li p {
+  color: #00712d;
+  font-weight: bold;
 }
 
 .footer {
