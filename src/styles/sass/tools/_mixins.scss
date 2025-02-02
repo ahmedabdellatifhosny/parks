@@ -72,3 +72,33 @@
   -ms-transform: translateY(-50%);
   -o-transform: translateY(-50%);
 }
+
+@mixin clippyLeft() {
+  clip-path: polygon(
+    50% 0%,
+    100% 0,
+    100% 35%,
+    100% 100%,
+    80% 100%,
+    32% 100%,
+    32% 70%,
+    0% 70%,
+    0 32%,
+    0 0
+  );
+}
+
+@mixin clippyRight() {
+  clip-path: polygon(
+    50% 0%,
+    100% 0,
+    100% 35%,
+    100% 70%,
+    73% 70%,
+    73% 100%,
+    21% 100%,
+    0 100%,
+    0% 35%,
+    0 0
+  );
+}

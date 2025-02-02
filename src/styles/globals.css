@@ -469,8 +469,11 @@ ul {
   width: 90%;
   margin: 50px auto;
   padding: 50px 0;
-  border: 1px dotted #ccc;
   border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
 }
 .parks .first-park img {
   -o-object-fit: cover;
@@ -489,6 +492,10 @@ ul {
   width: 90%;
   margin: auto;
   border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
 }
 .parks .second-park img {
   -o-object-fit: cover;
