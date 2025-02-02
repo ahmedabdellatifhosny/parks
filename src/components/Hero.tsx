@@ -9,8 +9,11 @@ import { faGear } from "@fortawesome/free-solid-svg-icons/faGear";
 export default function Hero() {
   return (
     <>
-      <div className="header">
-        <h4>ابحث عن اي حديقة في العالم</h4>
+      <div className="header text-center">
+        <h4>
+          اول واكبر دليل للحدائق حول العالم <br /> اكتشف الحدائق القريبة من حولك
+        </h4>
+        <p> 16614 حديقة </p>
       </div>
       <div className="search-form">
         <div className="search-btn">

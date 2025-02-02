@@ -38,30 +38,35 @@ ul {
 
 .header {
   position: absolute;
-  top: 50%;
+  top: 58%;
   left: 50%;
-  transform: translate(-50%, -400%);
-  -webkit-transform: translate(-50%, -400%);
-  -moz-transform: translate(-50%, -400%);
-  -ms-transform: translate(-50%, -400%);
-  -o-transform: translate(-50%, -400%);
+  transform: translate(-50%, -160%);
+  -webkit-transform: translate(-50%, -160%);
+  -moz-transform: translate(-50%, -160%);
+  -ms-transform: translate(-50%, -160%);
+  -o-transform: translate(-50%, -160%);
   z-index: 8;
   color: #fff;
   width: 100%;
   display: flex;
   justify-content: center;
+  flex-direction: column;
   font-size: 1.5rem;
 }
 .header h4 {
   color: #feffd2;
   font-size: 20px;
+  line-height: 30px;
+}
+.header p {
+  color: #feffd2;
 }
 
 .search-form {
   display: flex;
   justify-content: center;
   position: absolute;
-  top: 40%;
+  top: 50%;
   left: 50%;
   width: 100%;
   transform: translate(-50%, -50%);
