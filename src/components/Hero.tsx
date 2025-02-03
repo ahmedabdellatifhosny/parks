@@ -2,6 +2,7 @@
 import Carousel from "react-bootstrap/Carousel";
 import Image from "next/image";
 import SearchBar from "./SearchBar";
+import { Col, Container, Row } from "react-bootstrap";
 
 export default function Hero() {
   return (
@@ -22,7 +23,6 @@ export default function Hero() {
         </div>
         <div className="overlay"></div>
         <Carousel fade interval={2000} controls={false} indicators={false}>
-          {/* Slide 1 */}
           <Carousel.Item>
             <div className="imgcar">
               <div className="carousel-img-wrapper">
@@ -30,12 +30,27 @@ export default function Hero() {
               </div>
             </div>
             <Carousel.Caption>
-              <h3>First slide label</h3>
-              <p>هذا نص توضيحي للشريحة الأولى.</p>
+              <Container>
+                <Row>
+                  <Col>
+                    <h1>
+                      أول وأكبر منصة إلكترونية تجمع جميع الحدائق العامة الخضراء
+                      في دولتك والعالم
+                    </h1>
+                  </Col>
+                  <Col>
+                    <Image
+                      src="/images/hero/logo2.png"
+                      width={323}
+                      height={157}
+                      alt="hero"
+                    />
+                  </Col>
+                </Row>
+              </Container>
             </Carousel.Caption>
           </Carousel.Item>
 
-          {/* Slide 2 */}
           <Carousel.Item>
             <div className="imgcar">
               <div className="carousel-img-wrapper">
@@ -43,12 +58,27 @@ export default function Hero() {
               </div>
             </div>
             <Carousel.Caption>
-              <h3>Second slide label</h3>
-              <p>هذا نص توضيحي للشريحة الثانية.</p>
+              <Container>
+                <Row>
+                  <Col>
+                    <h1>
+                      أول وأكبر منصة إلكترونية تجمع جميع الحدائق العامة الخضراء
+                      في دولتك والعالم
+                    </h1>
+                  </Col>
+                  <Col>
+                    <Image
+                      src="/images/hero/logo2.png"
+                      width={323}
+                      height={157}
+                      alt="hero"
+                    />
+                  </Col>
+                </Row>
+              </Container>
             </Carousel.Caption>
           </Carousel.Item>
 
-          {/* Slide 3 */}
           <Carousel.Item>
             <div className="imgcar">
               <div className="carousel-img-wrapper">
@@ -56,8 +86,24 @@ export default function Hero() {
               </div>
             </div>
             <Carousel.Caption>
-              <h3>Third slide label</h3>
-              <p>هذا نص توضيحي للشريحة الثالثة.</p>
+              <Container>
+                <Row>
+                  <Col>
+                    <h1>
+                      أول وأكبر منصة إلكترونية تجمع جميع الحدائق العامة الخضراء
+                      في دولتك والعالم
+                    </h1>
+                  </Col>
+                  <Col>
+                    <Image
+                      src="/images/hero/logo2.png"
+                      width={323}
+                      height={157}
+                      alt="hero"
+                    />
+                  </Col>
+                </Row>
+              </Container>
             </Carousel.Caption>
           </Carousel.Item>
         </Carousel>
