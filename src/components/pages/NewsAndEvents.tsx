@@ -6,8 +6,10 @@ import { useState } from "react";
 import { Container } from "react-bootstrap";
 
 function NewsAndEvents() {
-  const [activePage, setActivePage] = useState<number>(1);
-  const [totalPages, setTotalPages] = useState<number>(4);
+  // const [activePage, setActivePage] = useState<number>(1);
+  // const [totalPages, setTotalPages] = useState<number>(4);
+  const [activePage] = useState<number>(1);
+  const [totalPages] = useState<number>(4);
   const handlePageChange = (page: number) => {
     if (page > 0 && page <= totalPages) {
       // fetchData()
