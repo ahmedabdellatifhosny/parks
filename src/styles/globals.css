@@ -278,6 +278,16 @@ ul {
   cursor: pointer;
 }
 .nearest .box img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  mask-image: url("/images/shapes/zigzag.png");
+  -webkit-mask-image: url("/images/shapes/zigzag.png");
+  mask-repeat: no-repeat;
+  -webkit-mask-repeat: no-repeat;
+  mask-position: center;
+  -webkit-mask-position: center;
+  mask-size: cover;
+  -webkit-mask-size: cover;
   padding: 20px;
   margin: 10px auto;
   transition: all 0.5s ease-in-out;
@@ -324,10 +334,20 @@ ul {
   -ms-border-radius: 10px;
   -o-border-radius: 10px;
   width: 90%;
-  margin: 10px;
+  margin: 10px auto;
   cursor: pointer;
 }
 .famous-parks .box img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  mask-image: url("/images/shapes/zigzag.png");
+  -webkit-mask-image: url("/images/shapes/zigzag.png");
+  mask-repeat: no-repeat;
+  -webkit-mask-repeat: no-repeat;
+  mask-position: center;
+  -webkit-mask-position: center;
+  mask-size: cover;
+  -webkit-mask-size: cover;
   padding: 20px;
   margin: 10px auto;
   transition: all 0.5s ease-in-out;

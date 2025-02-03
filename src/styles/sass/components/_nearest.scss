@@ -15,6 +15,15 @@
     margin: 10px;
     cursor: pointer;
     img {
+      object-fit: cover;
+      mask-image: url("/images/shapes/zigzag.png");
+      -webkit-mask-image: url("/images/shapes/zigzag.png");
+      mask-repeat: no-repeat;
+      -webkit-mask-repeat: no-repeat;
+      mask-position: center;
+      -webkit-mask-position: center;
+      mask-size: cover;
+      -webkit-mask-size: cover;
       padding: 20px;
       margin: 10px auto;
       transition: all 0.5s ease-in-out;

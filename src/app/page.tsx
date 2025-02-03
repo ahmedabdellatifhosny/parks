@@ -1,4 +1,4 @@
-import Platform from "../components/Platform";
+// import Platform from "../components/Platform";
 import Hero from "../components/Hero";
 import Nearest from "../components/Nearest";
 import "bootstrap/dist/css/bootstrap.min.css";
@@ -14,7 +14,7 @@ export default function Home() {
   return (
     <>
       <Hero />
-      <Platform />
+      {/* <Platform /> */}
       <Nearest />
       <News />
       <FamousParks />

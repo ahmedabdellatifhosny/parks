@@ -8,9 +8,18 @@
     box-shadow: $box-shadow;
     @include borderRedius(10px);
     width: 90%;
-    margin: 10px;
+    margin: 10px auto;
     cursor: pointer;
     img {
+      object-fit: cover;
+      mask-image: url("/images/shapes/zigzag.png");
+      -webkit-mask-image: url("/images/shapes/zigzag.png");
+      mask-repeat: no-repeat;
+      -webkit-mask-repeat: no-repeat;
+      mask-position: center;
+      -webkit-mask-position: center;
+      mask-size: cover;
+      -webkit-mask-size: cover;
       padding: 20px;
       margin: 10px auto;
       @include transitions();

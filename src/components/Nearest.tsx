@@ -25,7 +25,7 @@ export default function Nearest() {
             <div className="box">
               <Image
                 src={"/images/parks/3.jpeg"}
-                width={250}
+                width={320}
                 height={200}
                 alt="logo"
               />
@@ -70,7 +70,7 @@ export default function Nearest() {
               <div className="box">
                 <Image
                   src={"/images/parks/3.jpeg"}
-                  width={250}
+                  width={320}
                   height={200}
                   alt="logo"
                 />
@@ -116,7 +116,7 @@ export default function Nearest() {
               <div className="box">
                 <Image
                   src={"/images/parks/3.jpeg"}
-                  width={250}
+                  width={320}
                   height={200}
                   alt="logo"
                 />
@@ -162,7 +162,7 @@ export default function Nearest() {
               <div className="box">
                 <Image
                   src={"/images/parks/3.jpeg"}
-                  width={250}
+                  width={320}
                   height={200}
                   alt="logo"
                 />
@@ -208,7 +208,7 @@ export default function Nearest() {
               <div className="box">
                 <Image
                   src={"/images/parks/3.jpeg"}
-                  width={250}
+                  width={320}
                   height={200}
                   alt="logo"
                 />
@@ -254,7 +254,7 @@ export default function Nearest() {
               <div className="box">
                 <Image
                   src={"/images/parks/3.jpeg"}
-                  width={250}
+                  width={320}
                   height={200}
                   alt="logo"
                 />
@@ -300,7 +300,7 @@ export default function Nearest() {
               <div className="box">
                 <Image
                   src={"/images/parks/3.jpeg"}
-                  width={250}
+                  width={320}
                   height={200}
                   alt="logo"
                 />
@@ -346,7 +346,7 @@ export default function Nearest() {
               <div className="box">
                 <Image
                   src={"/images/parks/3.jpeg"}
-                  width={250}
+                  width={320}
                   height={200}
                   alt="logo"
                 />
@@ -392,7 +392,7 @@ export default function Nearest() {
               <div className="box">
                 <Image
                   src={"/images/parks/3.jpeg"}
-                  width={250}
+                  width={320}
                   height={200}
                   alt="logo"
                 />
