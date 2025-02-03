@@ -1,5 +1,4 @@
 "use client";
-
 import { Container } from "react-bootstrap";
 import Slider from "react-slick";
 import Image from "next/image";
@@ -15,9 +14,8 @@ export default function News() {
   return (
     <section className="news py-5">
       <div className="slider-container text-center mb-5">
-        
         <Container>
-        <h3 className="text-end mb-5">احدث اخبار الحدائق حول العالم </h3> 
+          <h3 className="text-end mb-5">احدث اخبار الحدائق حول العالم </h3>
           <Slider {...settings}>
             <div>
               <div className="box">
