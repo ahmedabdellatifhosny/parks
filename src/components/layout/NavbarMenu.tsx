@@ -7,13 +7,21 @@ import { faGlobe } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faUser } from "@fortawesome/free-solid-svg-icons/faUser";
 import Link from "next/link";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { usePathname } from "next/navigation";
 
 export default function NavbarMenu() {
   const [activeLink, setActiveLink] = useState("home");
   const pathname = usePathname();
-  if (pathname === "/signin" || pathname === "/signup" || pathname === "/forgot-password") {
+  useEffect(() => {
+    setActiveLink(pathname.split("/")[1] || "home");
+  }, [pathname]);
+
+  if (
+    pathname === "/signin" ||
+    pathname === "/signup" ||
+    pathname === "/forgot-password"
+  ) {
     return null;
   }
 
@@ -35,7 +43,7 @@ export default function NavbarMenu() {
                 الصفحه الرئيسية
               </Link>
               <Link
-                href="/"
+                href="/favorites"
                 className={activeLink === "favorites" ? "active" : ""}
                 onClick={() => setActiveLink("favorites")}
               >
@@ -43,8 +51,8 @@ export default function NavbarMenu() {
               </Link>
               <Link
                 href="/news-and-events"
-                className={activeLink === "news" ? "active" : ""}
-                onClick={() => setActiveLink("news")}
+                className={activeLink === "news-and-events" ? "active" : ""}
+                onClick={() => setActiveLink("news-and-events")}
               >
                 اخبار الحدائق والفاعليات{" "}
               </Link>

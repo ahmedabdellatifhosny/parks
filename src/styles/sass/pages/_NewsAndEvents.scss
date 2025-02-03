@@ -1,135 +1,132 @@
-.news-event-hero {
-  .title {
-    @include flex();
-    padding: 20px;
-    z-index: 40;
+.titlepage {
+  @include flex();
+  padding: 20px;
+  z-index: 40;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  h2 {
+    margin: 0 20px;
+    padding: 10px 25px;
     position: absolute;
+    background-color: #fff;
+    color: $primary-color;
+    border-radius: 30px;
+    font-size: 1.3rem;
+  }
+}
+.h2 {
+  width: 100%;
+  padding: 70px 20px;
+  h2 {
     width: 100%;
-    height: 100%;
-    h2 {
-      margin: 0 20px;
-      padding: 10px 25px;
-      position: absolute;
-      background-color: #fff;
-      color: $primary-color;
-      border-radius: 30px;
+    text-align: center;
+    color: $primary-color;
+    @media (max-width: 600px) {
       font-size: 1.3rem;
+      padding: 0 20px;
     }
   }
-  .h2 {
-    width: 100%;
-    padding: 70px 20px;
-    h2 {
-      width: 100%;
-      text-align: center;
-      color: $primary-color;
-      @media (max-width: 600px) {
-        font-size: 1.3rem;
-        padding: 0 20px;
-      }
-    }
-  }
-  .paginationCont {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    height: auto;
-    position: relative;
-    direction: ltr;
-    padding-top: 50px;
-    padding-bottom: 50px;
-  }
+}
+.paginationCont {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: auto;
+  position: relative;
+  direction: ltr;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
 
-  .paginations {
+.paginations {
+  @include flex();
+  gap: 10px;
+  flex-wrap: wrap;
+  list-style: none;
+  button {
+    width: 40px;
+    height: 40px;
     @include flex();
-    gap: 10px;
-    flex-wrap: wrap;
-    list-style: none;
-    button {
-      width: 40px;
-      height: 40px;
-      @include flex();
-      background-color: #fff;
-      border-radius: 8px;
-      border: 1px solid #ffc145;
-      cursor: pointer;
-      color: #ffc145;
+    background-color: #fff;
+    border-radius: 8px;
+    border: 1px solid #ffc145;
+    cursor: pointer;
+    color: #ffc145;
 
-      img {
-        width: 7px;
-      }
+    img {
+      width: 7px;
     }
   }
-  .paginations {
-    @include flex();
-    gap: 5px;
-    list-style: none;
-    padding: 0 10px;
-    flex-wrap: wrap;
+}
+.paginations {
+  @include flex();
+  gap: 5px;
+  list-style: none;
+  padding: 0 10px;
+  flex-wrap: wrap;
 
-    .page-link {
-      @include flex();
-      background-color: #fff;
-      color: #ffc145;
-      transition: 0.2s;
-      cursor: pointer;
-      font-weight: 700;
-      img {
-        width: 7px;
-      }
-      &:hover {
-        background-color: #ffc145;
-        color: #fff;
-      }
+  .page-link {
+    @include flex();
+    background-color: #fff;
+    color: #ffc145;
+    transition: 0.2s;
+    cursor: pointer;
+    font-weight: 700;
+    img {
+      width: 7px;
     }
-    .page-link.active {
+    &:hover {
       background-color: #ffc145;
       color: #fff;
-      &:hover {
-        background-color: #ffc145;
-      }
     }
   }
-
-  .inner {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-  }
-  .nande {
-    width: 100%;
-    display: flex;
-    padding: 30px 20px;
-    align-items: stretch;
-    gap: 20px;
-    border-radius: 10px;
-    border: 1px solid $gray-border;
-    img {
-      width: 400px;
-      height: 250px;
-      object-fit: cover;
-      border-radius: 10px;
+  .page-link.active {
+    background-color: #ffc145;
+    color: #fff;
+    &:hover {
+      background-color: #ffc145;
     }
   }
-  .nandeD {
-    h2 {
-      padding-top: 10px;
-    }
-    p {
-      color: #8a8a8a;
-      font-size: 1.2rem;
-      width: 90%;
-      padding-top: 10px;
-      button,
-      a {
-        color: $primary-color;
-        font-size: 1rem;
-        font-weight: 600;
-        display: inline;
-        padding: 0 5px;
-      }
+}
+.inner {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.nande {
+  width: 100%;
+  display: flex;
+  padding: 30px 20px;
+  align-items: stretch;
+  gap: 20px;
+  border-radius: 10px;
+  border: 1px solid $gray-border;
+  img {
+    width: 400px !important;
+    height: 250px !important;
+    object-fit: cover !important;
+    border-radius: 10px !important;
+  }
+}
+.nandeD {
+  h2 {
+    padding-top: 10px;
+  }
+  p {
+    color: #8a8a8a;
+    font-size: 1.2rem;
+    width: 90%;
+    padding-top: 10px;
+    button,
+    a {
+      color: $primary-color;
+      font-size: 1rem;
+      font-weight: 600;
+      display: inline;
+      padding: 0 5px;
     }
   }
 }
@@ -154,4 +151,155 @@
       height: auto;
     }
   }
+}
+.pr {
+  position: relative;
+  top: auto;
+  bottom: auto;
+  left: auto;
+  right: auto;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  h2 {
+    color: #8a8a8a;
+    font-size: 1.5rem;
+    padding-top: 20px;
+  }
+  .search-form {
+    position: relative;
+  }
+}
+.ptb50 {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.favItem {
+  width: 300px;
+  background: #ffffff;
+  border: 1px solid #f5f5f5;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 25px;
+  padding:15px 10px;
+  position: relative;
+}
+
+.likeItemBtn {
+  position: absolute;
+  left: 25px;
+  top: 15px;
+  z-index: 999;
+  @include circle(40px);
+  @include boxShadow();
+  @include flex;
+  background-color: #fff;
+  i {
+    color: #ffc145;
+    font-size: 1.3rem;
+  }
+}
+
+.favItemImage {
+  width: 100%;
+  height: 220px;
+  overflow: hidden;
+  @include flex();
+  margin: 0;
+  position: relative;
+  img {
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 0.3s all ease;
+  }
+  .image-layer {
+    position: absolute;
+    width: 110%;
+    height: 100%;
+    z-index: 3;
+  }
+  .overlay {
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    @include flex;
+    span {
+      color: #fff;
+      opacity: 0;
+      transform: translate(10px, 10px);
+      transition: 0.3s all ease;
+      z-index: 10;
+    }
+    background-color: #22222200;
+    position: absolute;
+    transition: 0.3s all ease;
+  }
+  &:hover {
+    img {
+      width: 110%;
+    }
+    .image-layer {
+      width: 115%;
+    }
+    .overlay {
+      background-color: #2222227a;
+      span {
+        transform: translate(0, 0);
+        opacity: 1;
+      }
+    }
+  }
+}
+
+.favItemData{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.itD{
+  display: flex;
+  flex-direction: column;
+  span{
+    &:nth-child(1){
+      font-weight: 600;
+    }
+    &:nth-child(2){
+      color: rgba(138, 138, 138, 1);
+      font-size: .9rem;
+    }
+  }
+}
+.itR{
+  display: flex;
+  flex-direction: column;
+  span{
+    color: rgba(138, 138, 138, 1);
+      font-size: .9rem;
+      text-align: left;
+      padding-top: 10px;
+  }
+}
+.rate{
+  display: flex;
+  gap: 5px;
+  direction: ltr;
+  i{
+    font-size: .8rem;
+    color: #ffc145;
+  }
+  
+}
+.favinner{
+  width: 100%;
+  @include flex;
+  gap: 40px;
+  flex-wrap: wrap;
+  padding-bottom: 100px;
 }

@@ -804,7 +804,7 @@ ul {
 }
 .inputs p {
   text-align: center;
-  color: #8A8A8A;
+  color: #8a8a8a;
   font-size: 1.2rem;
 }
 @media (max-width: 600px) {
@@ -1014,7 +1014,7 @@ ul {
     width: calc(16.6666666667% - 5px);
   }
 }
-.news-event-hero .title {
+.titlepage {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1024,7 +1024,7 @@ ul {
   width: 100%;
   height: 100%;
 }
-.news-event-hero .title h2 {
+.titlepage h2 {
   margin: 0 20px;
   padding: 10px 25px;
   position: absolute;
@@ -1033,22 +1033,24 @@ ul {
   border-radius: 30px;
   font-size: 1.3rem;
 }
-.news-event-hero .h2 {
+
+.h2 {
   width: 100%;
   padding: 70px 20px;
 }
-.news-event-hero .h2 h2 {
+.h2 h2 {
   width: 100%;
   text-align: center;
   color: #00712d;
 }
 @media (max-width: 600px) {
-  .news-event-hero .h2 h2 {
+  .h2 h2 {
     font-size: 1.3rem;
     padding: 0 20px;
   }
 }
-.news-event-hero .paginationCont {
+
+.paginationCont {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -1059,7 +1061,8 @@ ul {
   padding-top: 50px;
   padding-bottom: 50px;
 }
-.news-event-hero .paginations {
+
+.paginations {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1067,7 +1070,7 @@ ul {
   flex-wrap: wrap;
   list-style: none;
 }
-.news-event-hero .paginations button {
+.paginations button {
   width: 40px;
   height: 40px;
   display: flex;
@@ -1079,10 +1082,11 @@ ul {
   cursor: pointer;
   color: #ffc145;
 }
-.news-event-hero .paginations button img {
+.paginations button img {
   width: 7px;
 }
-.news-event-hero .paginations {
+
+.paginations {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1091,7 +1095,7 @@ ul {
   padding: 0 10px;
   flex-wrap: wrap;
 }
-.news-event-hero .paginations .page-link {
+.paginations .page-link {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1101,27 +1105,29 @@ ul {
   cursor: pointer;
   font-weight: 700;
 }
-.news-event-hero .paginations .page-link img {
+.paginations .page-link img {
   width: 7px;
 }
-.news-event-hero .paginations .page-link:hover {
+.paginations .page-link:hover {
   background-color: #ffc145;
   color: #fff;
 }
-.news-event-hero .paginations .page-link.active {
+.paginations .page-link.active {
   background-color: #ffc145;
   color: #fff;
 }
-.news-event-hero .paginations .page-link.active:hover {
+.paginations .page-link.active:hover {
   background-color: #ffc145;
 }
-.news-event-hero .inner {
+
+.inner {
   width: 100%;
   display: flex;
   flex-direction: column;
   gap: 20px;
 }
-.news-event-hero .nande {
+
+.nande {
   width: 100%;
   display: flex;
   padding: 30px 20px;
@@ -1130,24 +1136,25 @@ ul {
   border-radius: 10px;
   border: 1px solid #d9d9d9;
 }
-.news-event-hero .nande img {
-  width: 400px;
-  height: 250px;
-  -o-object-fit: cover;
-     object-fit: cover;
-  border-radius: 10px;
+.nande img {
+  width: 400px !important;
+  height: 250px !important;
+  -o-object-fit: cover !important;
+     object-fit: cover !important;
+  border-radius: 10px !important;
 }
-.news-event-hero .nandeD h2 {
+
+.nandeD h2 {
   padding-top: 10px;
 }
-.news-event-hero .nandeD p {
+.nandeD p {
   color: #8a8a8a;
   font-size: 1.2rem;
   width: 90%;
   padding-top: 10px;
 }
-.news-event-hero .nandeD p button,
-.news-event-hero .nandeD p a {
+.nandeD p button,
+.nandeD p a {
   color: #00712d;
   font-size: 1rem;
   font-weight: 600;
@@ -1171,4 +1178,167 @@ ul {
   .nande img {
     height: auto;
   }
+}
+.pr {
+  position: relative;
+  top: auto;
+  bottom: auto;
+  left: auto;
+  right: auto;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.pr h2 {
+  color: #8a8a8a;
+  font-size: 1.5rem;
+  padding-top: 20px;
+}
+.pr .search-form {
+  position: relative;
+}
+
+.ptb50 {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.favItem {
+  width: 300px;
+  background: #ffffff;
+  border: 1px solid #f5f5f5;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 25px;
+  padding: 15px 10px;
+  position: relative;
+}
+
+.likeItemBtn {
+  position: absolute;
+  left: 25px;
+  top: 15px;
+  z-index: 999;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  box-shadow: 0 0 10px rgba(0, 31, 93, 0.1803921569);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+}
+.likeItemBtn i {
+  color: #ffc145;
+  font-size: 1.3rem;
+}
+
+.favItemImage {
+  width: 100%;
+  height: 220px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  position: relative;
+}
+.favItemImage img {
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  transition: 0.3s all ease;
+}
+.favItemImage .image-layer {
+  position: absolute;
+  width: 110%;
+  height: 100%;
+  z-index: 3;
+}
+.favItemImage .overlay {
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(34, 34, 34, 0);
+  position: absolute;
+  transition: 0.3s all ease;
+}
+.favItemImage .overlay span {
+  color: #fff;
+  opacity: 0;
+  transform: translate(10px, 10px);
+  transition: 0.3s all ease;
+  z-index: 10;
+}
+.favItemImage:hover img {
+  width: 110%;
+}
+.favItemImage:hover .image-layer {
+  width: 115%;
+}
+.favItemImage:hover .overlay {
+  background-color: rgba(34, 34, 34, 0.4784313725);
+}
+.favItemImage:hover .overlay span {
+  transform: translate(0, 0);
+  opacity: 1;
+}
+
+.favItemData {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.itD {
+  display: flex;
+  flex-direction: column;
+}
+.itD span:nth-child(1) {
+  font-weight: 600;
+}
+.itD span:nth-child(2) {
+  color: rgb(138, 138, 138);
+  font-size: 0.9rem;
+}
+
+.itR {
+  display: flex;
+  flex-direction: column;
+}
+.itR span {
+  color: rgb(138, 138, 138);
+  font-size: 0.9rem;
+  text-align: left;
+  padding-top: 10px;
+}
+
+.rate {
+  display: flex;
+  gap: 5px;
+  direction: ltr;
+}
+.rate i {
+  font-size: 0.8rem;
+  color: #ffc145;
+}
+
+.favinner {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  flex-wrap: wrap;
+  padding-bottom: 100px;
 }/*# sourceMappingURL=globals.css.map */
