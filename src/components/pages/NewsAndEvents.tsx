@@ -51,7 +51,7 @@ function NewsAndEvents() {
         <div className="inner">
           <div className="nande">
             <Image
-              src={"/images/news/1.JPEG"}
+              src={"/images/news/1.jpeg"}
               alt=""
               width={1000}
               height={1000}
@@ -73,7 +73,7 @@ function NewsAndEvents() {
           </div>
           <div className="nande">
             <Image
-              src={"/images/news/1.JPEG"}
+              src={"/images/news/1.jpeg"}
               alt=""
               width={1000}
               height={1000}
@@ -95,7 +95,7 @@ function NewsAndEvents() {
           </div>
           <div className="nande">
             <Image
-              src={"/images/news/1.JPEG"}
+              src={"/images/news/1.jpeg"}
               alt=""
               width={1000}
               height={1000}
