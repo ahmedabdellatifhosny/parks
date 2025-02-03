@@ -331,6 +331,16 @@ ul {
   text-align: end;
   margin-right: 25px;
 }
+.nearest .show-park {
+  position: relative;
+  cursor: pointer;
+}
+.nearest .show-park p {
+  color: #1a4d2e;
+}
+.nearest .show-park p:hover {
+  color: #ffc145;
+}
 .nearest .read-more {
   cursor: pointer;
 }

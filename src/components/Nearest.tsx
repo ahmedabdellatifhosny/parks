@@ -26,6 +26,9 @@ export default function Nearest() {
               <div className="like">
                 <FontAwesomeIcon icon={faHeart} />
               </div>
+              <div className="show-park">
+                <p>عرض</p>
+              </div>
               <Image
                 src={"/images/parks/3.jpeg"}
                 width={320}
