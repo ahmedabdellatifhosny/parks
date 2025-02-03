@@ -23,7 +23,6 @@ export default function AddNewPark() {
             <FontAwesomeIcon icon={faPlus} />
           </Button>
         </div>
-    
 
         <Modal
           show={show}
