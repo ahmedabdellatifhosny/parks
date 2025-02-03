@@ -425,10 +425,10 @@ ul {
   -o-object-fit: cover;
      object-fit: cover;
 }
-.news .box .title {
+.news .title {
   text-align: end;
 }
-.news .box .title h5 {
+.news .title h5 {
   font-size: 18px;
   margin-bottom: 0;
 }
@@ -935,7 +935,7 @@ ul {
     width: calc(16.6666666667% - 5px);
   }
 }
-.title {
+.news-event-hero .title {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -945,7 +945,7 @@ ul {
   width: 100%;
   height: 100%;
 }
-.title h2 {
+.news-event-hero .title h2 {
   margin: 0 20px;
   padding: 10px 25px;
   position: absolute;
@@ -954,24 +954,22 @@ ul {
   border-radius: 30px;
   font-size: 1.3rem;
 }
-
-.h2 {
+.news-event-hero .h2 {
   width: 100%;
   padding: 70px 20px;
 }
-.h2 h2 {
+.news-event-hero .h2 h2 {
   width: 100%;
   text-align: center;
   color: #00712d;
 }
 @media (max-width: 600px) {
-  .h2 h2 {
+  .news-event-hero .h2 h2 {
     font-size: 1.3rem;
     padding: 0 20px;
   }
 }
-
-.paginationCont {
+.news-event-hero .paginationCont {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -982,8 +980,7 @@ ul {
   padding-top: 50px;
   padding-bottom: 50px;
 }
-
-.paginations {
+.news-event-hero .paginations {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -991,7 +988,7 @@ ul {
   flex-wrap: wrap;
   list-style: none;
 }
-.paginations button {
+.news-event-hero .paginations button {
   width: 40px;
   height: 40px;
   display: flex;
@@ -1003,11 +1000,10 @@ ul {
   cursor: pointer;
   color: #ffc145;
 }
-.paginations button img {
+.news-event-hero .paginations button img {
   width: 7px;
 }
-
-.paginations {
+.news-event-hero .paginations {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1016,7 +1012,7 @@ ul {
   padding: 0 10px;
   flex-wrap: wrap;
 }
-.paginations .page-link {
+.news-event-hero .paginations .page-link {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1026,29 +1022,27 @@ ul {
   cursor: pointer;
   font-weight: 700;
 }
-.paginations .page-link img {
+.news-event-hero .paginations .page-link img {
   width: 7px;
 }
-.paginations .page-link:hover {
+.news-event-hero .paginations .page-link:hover {
   background-color: #ffc145;
   color: #fff;
 }
-.paginations .page-link.active {
+.news-event-hero .paginations .page-link.active {
   background-color: #ffc145;
   color: #fff;
 }
-.paginations .page-link.active:hover {
+.news-event-hero .paginations .page-link.active:hover {
   background-color: #ffc145;
 }
-
-.inner {
+.news-event-hero .inner {
   width: 100%;
   display: flex;
   flex-direction: column;
   gap: 20px;
 }
-
-.nande {
+.news-event-hero .nande {
   width: 100%;
   display: flex;
   padding: 30px 20px;
@@ -1057,24 +1051,24 @@ ul {
   border-radius: 10px;
   border: 1px solid #d9d9d9;
 }
-.nande img {
+.news-event-hero .nande img {
   width: 400px;
   height: 250px;
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: 10px;
 }
-
-.nandeD h2 {
+.news-event-hero .nandeD h2 {
   padding-top: 10px;
 }
-.nandeD p {
+.news-event-hero .nandeD p {
   color: #8a8a8a;
   font-size: 1.2rem;
   width: 90%;
   padding-top: 10px;
 }
-.nandeD p button, .nandeD p a {
+.news-event-hero .nandeD p button,
+.news-event-hero .nandeD p a {
   color: #00712d;
   font-size: 1rem;
   font-weight: 600;

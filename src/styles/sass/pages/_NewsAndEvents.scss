@@ -1,153 +1,156 @@
-.title {
-  @include flex();
-  padding: 20px;
-  z-index: 40;
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  h2 {
-    margin: 0 20px;
-    padding: 10px 25px;
+.news-event-hero {
+  .title {
+    @include flex();
+    padding: 20px;
+    z-index: 40;
     position: absolute;
-    background-color: #fff;
-    color: $primary-color;
-    border-radius: 30px;
-    font-size: 1.3rem;
-  }
-}
-.h2 {
-  width: 100%;
-  padding: 70px 20px;
-  h2 {
     width: 100%;
-    text-align: center;
-    color: $primary-color;
-    @media (max-width:600px) {
+    height: 100%;
+    h2 {
+      margin: 0 20px;
+      padding: 10px 25px;
+      position: absolute;
+      background-color: #fff;
+      color: $primary-color;
+      border-radius: 30px;
       font-size: 1.3rem;
-      padding: 0 20px;
     }
   }
-}
-.paginationCont {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 100%;
-  height: auto;
-  position: relative;
-  direction: ltr;
-  padding-top: 50px;
-  padding-bottom: 50px;
-}
-
-.paginations {
-  @include flex();
-  gap: 10px;
-  flex-wrap: wrap;
-  list-style: none;
-  button {
-    width: 40px;
-    height: 40px;
-    @include flex();
-    background-color: #fff;
-    border-radius: 8px;
-    border: 1px solid #ffc145;
-    cursor: pointer;
-    color: #ffc145;
-
-    img {
-      width: 7px;
+  .h2 {
+    width: 100%;
+    padding: 70px 20px;
+    h2 {
+      width: 100%;
+      text-align: center;
+      color: $primary-color;
+      @media (max-width: 600px) {
+        font-size: 1.3rem;
+        padding: 0 20px;
+      }
     }
   }
-}
-.paginations {
-  @include flex();
-  gap: 5px;
-  list-style: none;
-  padding: 0 10px;
-  flex-wrap: wrap;
+  .paginationCont {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    position: relative;
+    direction: ltr;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
 
-  .page-link {
+  .paginations {
     @include flex();
-    background-color: #fff;
-    color: #ffc145;
-    transition: 0.2s;
-    cursor: pointer;
-    font-weight: 700;
-    img {
-      width: 7px;
+    gap: 10px;
+    flex-wrap: wrap;
+    list-style: none;
+    button {
+      width: 40px;
+      height: 40px;
+      @include flex();
+      background-color: #fff;
+      border-radius: 8px;
+      border: 1px solid #ffc145;
+      cursor: pointer;
+      color: #ffc145;
+
+      img {
+        width: 7px;
+      }
     }
-    &:hover {
+  }
+  .paginations {
+    @include flex();
+    gap: 5px;
+    list-style: none;
+    padding: 0 10px;
+    flex-wrap: wrap;
+
+    .page-link {
+      @include flex();
+      background-color: #fff;
+      color: #ffc145;
+      transition: 0.2s;
+      cursor: pointer;
+      font-weight: 700;
+      img {
+        width: 7px;
+      }
+      &:hover {
+        background-color: #ffc145;
+        color: #fff;
+      }
+    }
+    .page-link.active {
       background-color: #ffc145;
       color: #fff;
+      &:hover {
+        background-color: #ffc145;
+      }
     }
   }
-  .page-link.active {
-    background-color: #ffc145;
-    color: #fff;
-    &:hover {
-      background-color: #ffc145;
-    }
-  }
-}
 
-.inner {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-}
-.nande {
-  width: 100%;
-  display: flex;
-  padding: 30px 20px;
-  align-items: stretch;
-  gap: 20px;
-  border-radius: 10px;
-  border: 1px solid $gray-border;
-  img {
-    width: 400px;
-    height: 250px;
-    object-fit: cover;
-    border-radius: 10px;
-  }
-}
-.nandeD {
-  h2{
-    padding-top: 10px;
-  }
-  p {
-    color: #8a8a8a;
-    font-size: 1.2rem;
-    width: 90%;
-    padding-top: 10px;
-    button,a {
-      color: $primary-color;
-      font-size: 1rem;
-      font-weight: 600;
-      display: inline;
-      padding: 0 5px;
-    }
-  }
-}
-
-@media (max-width:1000px) {
-  .nande{
+  .inner {
+    width: 100%;
+    display: flex;
     flex-direction: column;
-    img{
+    gap: 20px;
+  }
+  .nande {
+    width: 100%;
+    display: flex;
+    padding: 30px 20px;
+    align-items: stretch;
+    gap: 20px;
+    border-radius: 10px;
+    border: 1px solid $gray-border;
+    img {
+      width: 400px;
+      height: 250px;
+      object-fit: cover;
+      border-radius: 10px;
+    }
+  }
+  .nandeD {
+    h2 {
+      padding-top: 10px;
+    }
+    p {
+      color: #8a8a8a;
+      font-size: 1.2rem;
+      width: 90%;
+      padding-top: 10px;
+      button,
+      a {
+        color: $primary-color;
+        font-size: 1rem;
+        font-weight: 600;
+        display: inline;
+        padding: 0 5px;
+      }
+    }
+  }
+}
+
+@media (max-width: 1000px) {
+  .nande {
+    flex-direction: column;
+    img {
       width: 100%;
     }
   }
-  .nandeD{
-    p{
+  .nandeD {
+    p {
       width: 100%;
       font-size: 1rem;
     }
   }
 }
-@media (max-width:500px) {
-  .nande{
-    img{
+@media (max-width: 500px) {
+  .nande {
+    img {
       height: auto;
     }
   }
