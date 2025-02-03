@@ -11,6 +11,8 @@ function NewsAndEvents() {
   const handlePageChange = (page: number) => {
     if (page > 0 && page <= totalPages) {
       // fetchData()
+      setActivePage(1);
+      setTotalPages(4);
       window.scrollTo(0, 0);
     }
   };
