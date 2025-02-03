@@ -4,16 +4,69 @@
     color: $primary-color;
   }
   .box {
+    border: 1px solid #ccc;
     background-color: #fff;
-    box-shadow: 10px 10px 10px 10px #d3d3d3;
     border-radius: 10px;
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
     -ms-border-radius: 10px;
     -o-border-radius: 10px;
-    width: 90%;
-    margin: 10px;
     cursor: pointer;
+    width: 90%;
+    .box-img {
+      @include transitions();
+      &:hover {
+        @include transitions();
+        .overlay {
+          display: block;
+        }
+        .show-park {
+          display: block;
+        }
+      }
+      position: relative;
+      .overlay {
+        background-color: #2222227a;
+        position: absolute;
+
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        -webkit-transform: translate(-50%, -50%);
+        -moz-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        -o-transform: translate(-50%, -50%);
+        width: 100%;
+        height: 100%;
+        z-index: 999;
+        mask-image: url("/images/shapes/zigzag.png");
+        -webkit-mask-image: url("/images/shapes/zigzag.png");
+        mask-repeat: no-repeat;
+        -webkit-mask-repeat: no-repeat;
+        mask-position: center;
+        -webkit-mask-position: center;
+        mask-size: cover;
+        -webkit-mask-size: cover;
+        display: none;
+      }
+
+      .show-park {
+        display: none;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        -webkit-transform: translate(-50%, -50%);
+        -moz-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        -o-transform: translate(-50%, -50%);
+        z-index: 999;
+        cursor: pointer;
+        p {
+          color: #fff;
+        }
+      }
+    }
     img {
       object-fit: cover;
       mask-image: url("/images/shapes/zigzag.png");
@@ -26,7 +79,7 @@
       -webkit-mask-size: cover;
       padding: 20px;
       margin: 10px auto;
-      @include transitions();
+
       &:hover {
         @include transformScale();
       }
@@ -37,10 +90,10 @@
   }
   .like {
     position: relative;
+    cursor: pointer;
 
     .fa-heart {
       color: $hover-color;
-      cursor: pointer;
       position: absolute;
       top: 22px;
       left: 70px;
@@ -57,16 +110,7 @@
       margin-right: 25px;
     }
   }
-  .show-park {
-    position: relative;
-    cursor: pointer;
-    p {
-      color: $dark-primary-color;
-      &:hover {
-        color: $hover-color;
-      }
-    }
-  }
+
   .read-more {
     cursor: pointer;
     p {
