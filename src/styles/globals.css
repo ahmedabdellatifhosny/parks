@@ -307,7 +307,29 @@ ul {
   color: #ffc145;
 }
 .nearest .like {
+  position: relative;
+}
+.nearest .like .fa-heart {
+  color: #ffc145;
+  cursor: pointer;
   position: absolute;
+  top: 22px;
+  left: 70px;
+  z-index: 1;
+  background-color: #fff;
+  padding: 7px;
+  border-radius: 50px;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  -ms-border-radius: 50px;
+  -o-border-radius: 50px;
+}
+.nearest .rate {
+  color: #8a8a8a;
+}
+.nearest .rate .town {
+  text-align: end;
+  margin-right: 25px;
 }
 .nearest .read-more {
   cursor: pointer;

@@ -5,7 +5,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { Col, Container, Row } from "react-bootstrap";
 import Image from "next/image";
-import { faStar } from "@fortawesome/free-solid-svg-icons";
+import { faHeart, faStar } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 export default function Nearest() {
@@ -23,6 +23,9 @@ export default function Nearest() {
           <h3 className="text-end mb-5"> حدائق بالقرب منك</h3>
           <Slider {...settings}>
             <div className="box">
+              <div className="like">
+                <FontAwesomeIcon icon={faHeart} />
+              </div>
               <Image
                 src={"/images/parks/3.jpeg"}
                 width={320}
@@ -51,7 +54,9 @@ export default function Nearest() {
                         </li>
                       </ul>
                     </Col>
-                    <Col>حديقة متميزه</Col>
+                    <Col>
+                      <p>حديقه متميزه</p>
+                    </Col>
                   </Row>
                 </Container>
               </div>
@@ -59,15 +64,20 @@ export default function Nearest() {
                 <Container>
                   <Row>
                     <Col>
-                      <p>200 تقييم</p>
+                      <p className="">200 تقييم</p>
                     </Col>
-                    <Col> الاسكندرية</Col>
+                    <Col>
+                      <p className="town">الاسكندرية</p>
+                    </Col>
                   </Row>
                 </Container>
               </div>
             </div>
             <div>
               <div className="box">
+                <div className="like">
+                  <FontAwesomeIcon icon={faHeart} />
+                </div>
                 <Image
                   src={"/images/parks/3.jpeg"}
                   width={320}
@@ -96,7 +106,9 @@ export default function Nearest() {
                           </li>
                         </ul>
                       </Col>
-                      <Col>حديقة متميزه</Col>
+                      <Col>
+                        <p>حديقه متميزه</p>
+                      </Col>
                     </Row>
                   </Container>
                 </div>
@@ -106,7 +118,9 @@ export default function Nearest() {
                       <Col>
                         <p>200 تقييم</p>
                       </Col>
-                      <Col> الاسكندرية</Col>
+                      <Col>
+                        <p className="town">الاسكندرية</p>
+                      </Col>
                     </Row>
                   </Container>
                 </div>
@@ -114,6 +128,9 @@ export default function Nearest() {
             </div>
             <div>
               <div className="box">
+                <div className="like">
+                  <FontAwesomeIcon icon={faHeart} />
+                </div>
                 <Image
                   src={"/images/parks/3.jpeg"}
                   width={320}
@@ -142,7 +159,9 @@ export default function Nearest() {
                           </li>
                         </ul>
                       </Col>
-                      <Col>حديقة متميزه</Col>
+                      <Col>
+                        <p>حديقه متميزه</p>
+                      </Col>
                     </Row>
                   </Container>
                 </div>
@@ -152,7 +171,9 @@ export default function Nearest() {
                       <Col>
                         <p>200 تقييم</p>
                       </Col>
-                      <Col> الاسكندرية</Col>
+                      <Col>
+                        <p className="town">الاسكندرية</p>
+                      </Col>
                     </Row>
                   </Container>
                 </div>
@@ -160,6 +181,9 @@ export default function Nearest() {
             </div>
             <div>
               <div className="box">
+                <div className="like">
+                  <FontAwesomeIcon icon={faHeart} />
+                </div>
                 <Image
                   src={"/images/parks/3.jpeg"}
                   width={320}
@@ -188,7 +212,9 @@ export default function Nearest() {
                           </li>
                         </ul>
                       </Col>
-                      <Col>حديقة متميزه</Col>
+                      <Col>
+                        <p>حديقه متميزه</p>
+                      </Col>
                     </Row>
                   </Container>
                 </div>
@@ -198,7 +224,9 @@ export default function Nearest() {
                       <Col>
                         <p>200 تقييم</p>
                       </Col>
-                      <Col> الاسكندرية</Col>
+                      <Col>
+                        <p className="town">الاسكندرية</p>
+                      </Col>
                     </Row>
                   </Container>
                 </div>
@@ -206,6 +234,9 @@ export default function Nearest() {
             </div>
             <div>
               <div className="box">
+                <div className="like">
+                  <FontAwesomeIcon icon={faHeart} />
+                </div>
                 <Image
                   src={"/images/parks/3.jpeg"}
                   width={320}
@@ -234,7 +265,9 @@ export default function Nearest() {
                           </li>
                         </ul>
                       </Col>
-                      <Col>حديقة متميزه</Col>
+                      <Col>
+                        <p>حديقه متميزه</p>
+                      </Col>
                     </Row>
                   </Container>
                 </div>
@@ -244,7 +277,9 @@ export default function Nearest() {
                       <Col>
                         <p>200 تقييم</p>
                       </Col>
-                      <Col> الاسكندرية</Col>
+                      <Col>
+                        <p className="town">الاسكندرية</p>
+                      </Col>
                     </Row>
                   </Container>
                 </div>
@@ -252,6 +287,9 @@ export default function Nearest() {
             </div>
             <div>
               <div className="box">
+                <div className="like">
+                  <FontAwesomeIcon icon={faHeart} />
+                </div>
                 <Image
                   src={"/images/parks/3.jpeg"}
                   width={320}
@@ -280,7 +318,9 @@ export default function Nearest() {
                           </li>
                         </ul>
                       </Col>
-                      <Col>حديقة متميزه</Col>
+                      <Col>
+                        <p>حديقه متميزه</p>
+                      </Col>
                     </Row>
                   </Container>
                 </div>
@@ -290,7 +330,9 @@ export default function Nearest() {
                       <Col>
                         <p>200 تقييم</p>
                       </Col>
-                      <Col> الاسكندرية</Col>
+                      <Col>
+                        <p className="town">الاسكندرية</p>
+                      </Col>
                     </Row>
                   </Container>
                 </div>
@@ -298,6 +340,9 @@ export default function Nearest() {
             </div>
             <div>
               <div className="box">
+                <div className="like">
+                  <FontAwesomeIcon icon={faHeart} />
+                </div>
                 <Image
                   src={"/images/parks/3.jpeg"}
                   width={320}
@@ -326,7 +371,9 @@ export default function Nearest() {
                           </li>
                         </ul>
                       </Col>
-                      <Col>حديقة متميزه</Col>
+                      <Col>
+                        <p>حديقه متميزه</p>
+                      </Col>
                     </Row>
                   </Container>
                 </div>
@@ -336,7 +383,9 @@ export default function Nearest() {
                       <Col>
                         <p>200 تقييم</p>
                       </Col>
-                      <Col> الاسكندرية</Col>
+                      <Col>
+                        <p className="town">الاسكندرية</p>
+                      </Col>
                     </Row>
                   </Container>
                 </div>
@@ -344,6 +393,9 @@ export default function Nearest() {
             </div>
             <div>
               <div className="box">
+                <div className="like">
+                  <FontAwesomeIcon icon={faHeart} />
+                </div>
                 <Image
                   src={"/images/parks/3.jpeg"}
                   width={320}
@@ -372,7 +424,9 @@ export default function Nearest() {
                           </li>
                         </ul>
                       </Col>
-                      <Col>حديقة متميزه</Col>
+                      <Col>
+                        <p>حديقه متميزه</p>
+                      </Col>
                     </Row>
                   </Container>
                 </div>
@@ -382,7 +436,9 @@ export default function Nearest() {
                       <Col>
                         <p>200 تقييم</p>
                       </Col>
-                      <Col> الاسكندرية</Col>
+                      <Col>
+                        <p className="town">الاسكندرية</p>
+                      </Col>
                     </Row>
                   </Container>
                 </div>
@@ -390,6 +446,9 @@ export default function Nearest() {
             </div>
             <div>
               <div className="box">
+                <div className="like">
+                  <FontAwesomeIcon icon={faHeart} />
+                </div>
                 <Image
                   src={"/images/parks/3.jpeg"}
                   width={320}
@@ -418,7 +477,9 @@ export default function Nearest() {
                           </li>
                         </ul>
                       </Col>
-                      <Col>حديقة متميزه</Col>
+                      <Col>
+                        <p>حديقه متميزه</p>
+                      </Col>
                     </Row>
                   </Container>
                 </div>
@@ -428,7 +489,9 @@ export default function Nearest() {
                       <Col>
                         <p>200 تقييم</p>
                       </Col>
-                      <Col> الاسكندرية</Col>
+                      <Col>
+                        <p className="town">الاسكندرية</p>
+                      </Col>
                     </Row>
                   </Container>
                 </div>
