@@ -1196,6 +1196,12 @@ ul {
   color: #8a8a8a;
   font-size: 1.5rem;
   padding-top: 20px;
+  text-align: center;
+}
+@media (max-width: 500px) {
+  .pr h2 {
+    font-size: 1.3rem;
+  }
 }
 .pr .search-form {
   position: relative;
@@ -1277,6 +1283,8 @@ ul {
   transform: translate(10px, 10px);
   transition: 0.3s all ease;
   z-index: 10;
+  font-size: 1.1rem;
+  font-weight: 600;
 }
 .favItemImage:hover img {
   width: 110%;

@@ -168,6 +168,10 @@
     color: #8a8a8a;
     font-size: 1.5rem;
     padding-top: 20px;
+    text-align: center;
+    @media (max-width: 500px) {
+      font-size: 1.3rem;
+    }
   }
   .search-form {
     position: relative;
@@ -183,7 +187,7 @@
   border: 1px solid #f5f5f5;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 25px;
-  padding:15px 10px;
+  padding: 15px 10px;
   position: relative;
 }
 
@@ -234,6 +238,8 @@
       transform: translate(10px, 10px);
       transition: 0.3s all ease;
       z-index: 10;
+      font-size: 1.1rem;
+      font-weight: 600;
     }
     background-color: #22222200;
     position: absolute;
@@ -256,47 +262,46 @@
   }
 }
 
-.favItemData{
+.favItemData {
   width: 100%;
   display: flex;
   justify-content: space-between;
   padding-left: 10px;
   padding-right: 10px;
 }
-.itD{
+.itD {
   display: flex;
   flex-direction: column;
-  span{
-    &:nth-child(1){
+  span {
+    &:nth-child(1) {
       font-weight: 600;
     }
-    &:nth-child(2){
+    &:nth-child(2) {
       color: rgba(138, 138, 138, 1);
-      font-size: .9rem;
+      font-size: 0.9rem;
     }
   }
 }
-.itR{
+.itR {
   display: flex;
   flex-direction: column;
-  span{
+  span {
     color: rgba(138, 138, 138, 1);
-      font-size: .9rem;
-      text-align: left;
-      padding-top: 10px;
+    font-size: 0.9rem;
+    text-align: left;
+    padding-top: 10px;
   }
 }
-.rate{
+.rate {
   display: flex;
   gap: 5px;
   direction: ltr;
-  i{
-    font-size: .8rem;
+  i {
+    font-size: 0.8rem;
     color: #ffc145;
   }
-  
 }
-.favinner{
+.favinner {
   width: 100%;
   @include flex;
   gap: 40px;
