@@ -135,7 +135,8 @@
   .nande {
     flex-direction: column;
     img {
-      width: 100%;
+      width: 100%  !important;
+      aspect-ratio:initial;
     }
   }
   .nandeD {
@@ -148,7 +149,7 @@
 @media (max-width: 500px) {
   .nande {
     img {
-      height: auto;
+      height: auto !important;
     }
   }
 }

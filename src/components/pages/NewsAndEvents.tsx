@@ -53,7 +53,7 @@ function NewsAndEvents() {
             <Image
               src={"/images/news/1.jpeg"}
               alt=""
-              width={1000}
+              width={400}
               height={1000}
             />
             <div className="nandeD">
