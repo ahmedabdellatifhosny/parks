@@ -220,6 +220,16 @@ ul {
      object-fit: contain;
   transform: translateY(45%);
 }
+@media (max-width: 800px) {
+  .image-clip-path img {
+    transform: translateY(46%);
+  }
+}
+@media (max-width: 450px) {
+  .image-clip-path img {
+    transform: translateY(48%);
+  }
+}
 
 .platform {
   padding: 50px 0 100px 0;
@@ -685,6 +695,9 @@ ul {
 .footer ul li {
   margin-bottom: 15px;
   font-weight: normal;
+}
+.footer ul li a {
+  margin: 0;
 }
 .footer .mark {
   position: relative;
@@ -1349,4 +1362,103 @@ ul {
   gap: 40px;
   flex-wrap: wrap;
   padding-bottom: 100px;
+}
+
+.hero.hero75vh {
+  height: 75vh;
+}
+.hero.hero75vh .imgcar {
+  height: 75vh;
+}
+
+@media (max-width: 800px) {
+  .hero.hero75vh {
+    height: 50vh;
+  }
+  .hero.hero75vh .imgcar {
+    height: 50vh;
+  }
+}
+.contentText {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 50px 0 70px 0;
+  gap: 10px;
+}
+.contentText h2 {
+  color: #00712d;
+  padding: 20px 0;
+}
+@media (max-width: 800px) {
+  .contentText h2 {
+    font-size: 1.3rem;
+  }
+}
+.contentText p {
+  color: rgb(138, 138, 138);
+  font-size: 1.2rem;
+}
+@media (max-width: 800px) {
+  .contentText p {
+    font-size: 1rem;
+  }
+}
+
+.images {
+  gap: 40px;
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 20px;
+}
+.images img {
+  width: 500px;
+  height: 350px;
+  border-radius: 25px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+@media (max-width: 700px) {
+  .images {
+    gap: 20px;
+  }
+  .images img {
+    width: 100%;
+    height: 270px;
+  }
+}
+@media (max-width: 450px) {
+  .images img {
+    width: 100%;
+    height: 200px;
+  }
+}
+.flex50 {
+  display: flex;
+  gap: 40px;
+  padding-bottom: 50px;
+  flex-wrap: wrap-reverse;
+}
+.flex50 .image {
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 0;
+}
+.flex50 .contentText {
+  padding: 0;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+@media (max-width: 1000px) {
+  .flex50 {
+    gap: 0;
+  }
+  .flex50 .image {
+    width: 100%;
+    margin: 0 auto;
+  }
 }/*# sourceMappingURL=globals.css.map */

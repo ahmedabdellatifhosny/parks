@@ -173,5 +173,11 @@
     width: 100%;
     object-fit: contain;
     transform: translateY(45%);
+    @media (max-width:800px) {
+      transform: translateY(46%);
+    }
+    @media (max-width:450px) {
+      transform: translateY(48%);
+    }
   }
 }

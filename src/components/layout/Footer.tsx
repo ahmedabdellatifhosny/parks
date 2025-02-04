@@ -15,7 +15,11 @@ export default function Footer() {
   const pathname = usePathname();
   console.log(pathname);
 
-  if (pathname === "/signin" || pathname === "/signup" || pathname === "/forgot-password") {
+  if (
+    pathname === "/signin" ||
+    pathname === "/signup" ||
+    pathname === "/forgot-password"
+  ) {
     return null;
   }
   return (
@@ -38,7 +42,9 @@ export default function Footer() {
             <ul>
               <li>التطبيق</li>
               <li>حدائقنا</li>
-              <li>من نحن ؟</li>
+              <li>
+                <Link href={"/about"}>من نحن ؟</Link>
+              </li>
               <li>الجهات المشاركه </li>
               <li>الشركات المشغله </li>
             </ul>
@@ -72,7 +78,7 @@ export default function Footer() {
             </Col>
             <Col md={6}>
               <div className="socialmedia-icons">
-                <ul className="d-flex justify-content-end">
+                <ul className="d-flex justify-content-end gap-3">
                   <li>
                     <Link href={"#"}>
                       <FontAwesomeIcon icon={faFacebook} />
