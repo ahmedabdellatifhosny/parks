@@ -13,10 +13,6 @@ export default function NavbarMenu() {
   const pathname = usePathname();
   const lang = useLocale();
   const t = useTranslations();
-
-  console.log("Current Locale:", lang);
-  console.log("Translation for Home:", t("home")); // Debugging
-
   const activeLink = pathname.split("/")[2] || lang;
 
   if (
@@ -43,7 +39,7 @@ export default function NavbarMenu() {
               <Link href={`/${lang}/favorites`} className={activeLink === "favorites" ? "active" : ""}>
                 {t("favorites")}
               </Link>
-              <Link href={`/${lang}/news`} className={activeLink === "news" ? "active" : ""}>
+              <Link href={`/${lang}/news-and-events`} className={activeLink === "news" ? "active" : ""}>
                 {t("news")}
               </Link>
               <Link href={`/${lang}/reservations`} className={activeLink === "reservations" ? "active" : ""}>
