@@ -1,7 +1,7 @@
-'use client'
+"use client";
 import Image from "next/image";
 import Link from "next/link";
-import { useLocale } from 'next-intl';
+import { useLocale } from "next-intl";
 
 function Signin() {
   const lang = useLocale();
@@ -18,36 +18,58 @@ function Signin() {
       <div className="form">
         <Link href={`/${lang}`} className="logo">
           <Image
-            src={"/images/logo-green.png"}
+            src={
+              lang === "ar"
+                ? "/images/logo-green.png"
+                : "/images/logo-green-en.png"
+            }
             width={180}
             height={130}
             alt="logo"
           />
         </Link>
-        <h2>تسجيل دخول</h2>
+        <h2>{lang === "ar" ? "تسجيل الدخول" : "Login"} </h2>
         <div className="w500 inputs">
           <div className="input">
-            <span>الاسم</span>
-            <input type="text" placeholder="ادخل اسمك بالكامل" />
+            <span>{lang === "ar" ? "الاسم" : "Name"}</span>
+            <input
+              type="text"
+              placeholder={
+                lang === "ar" ? "ادخل اسمك بالكامل" : "Enter your full name"
+              }
+            />
           </div>
           <div className="input">
-            <span>كلمة المرور</span>
-            <input type="password" placeholder="ادخل كلمة المرور الخاصه بك " />
+            <span>{lang === "ar" ? "كلمة المرور" : "Password"}</span>
+            <input
+              type="password"
+              placeholder={
+                lang === "ar"
+                  ? "ادخل كلمة المرور الخاصه بك"
+                  : "Enter your password"
+              }
+            />
           </div>
           <div className="forgotAndRem">
             <div className="rem">
               <input type="checkbox" id="rem" />
-              <label htmlFor="rem">تذكر كلمة المرور</label>
+              <label htmlFor="rem">
+                {lang === "ar" ? "تذكر كلمة المرور" : "Remember password"}
+              </label>
             </div>
             <div className="forgot">
-              <Link href={`/${lang}/forgot-password`}>هل نسيت كلمة المرور؟</Link>
+              <Link href={`/${lang}/forgot-password`}>
+                {lang === "ar" ? "هل نسيت كلمة المرور؟" : "Forgot password?"}
+              </Link>
             </div>
           </div>
           <div className="submitbtn">
-            <button type="submit">تسجيل دخول</button>
+            <button type="submit">
+              {lang === "ar" ? "تسجيل دخول" : "Login"}
+            </button>
           </div>
           <div className="or">
-            <span> أو</span>
+            <span>{lang === "ar" ? "أو" : "Or"}</span>
           </div>
           <div className="logWith">
             <button className="icon">
@@ -76,12 +98,15 @@ function Signin() {
             </button>
           </div>
           <div className="do">
-            ليس لديك حساب؟ <Link href={`/${lang}/signup`}> أنشئ حساب</Link>
+            {lang === "ar" ? "ليس لديك حساب؟" : "Don't have an account?"}{" "}
+            <Link href={`/${lang}/signup`}>
+              {lang === "ar" ? "أنشئ حساب" : "Sign up"}
+            </Link>
           </div>
         </div>
       </div>
     </div>
-  )
+  );
 }
 
-export default Signin
+export default Signin;

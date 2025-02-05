@@ -4,13 +4,15 @@ import Image from "next/image";
 import SearchBar from "../SearchBar";
 import { Container } from "react-bootstrap";
 import Link from "next/link";
+import { useLocale } from "next-intl";
 
 function FavParks() {
+  const lang = useLocale();
   return (
     <>
       <section className="hero">
         <div className="titlepage">
-          <h2> الحدائق المفضله</h2>
+          <h2>{lang === "ar" ? "الحدائق المفضلة" : "Favorite Parks"}</h2>
         </div>
         <div className="image-clip-path">
           <Image src="/images/image-clip-path.svg" fill alt="logo" />
@@ -36,7 +38,11 @@ function FavParks() {
       </section>
       <Container>
         <div className="sbar pr">
-          <h2>ابحث عن اي حديقه في العالم </h2>
+          <h2>
+            {lang === "ar"
+              ? "ابحث عن أي حديقة في العالم"
+              : "Search for any park in the world"}
+          </h2>
           <SearchBar />
         </div>
         <div className="favinner ptb50">
@@ -46,7 +52,7 @@ function FavParks() {
             </button>
             <Link href={"##"} className="favItemImage">
               <div className="overlay">
-                <span>عرض</span>
+                <span>{lang === "ar" ? "عرض" : "View"}</span>
               </div>
               <Image
                 src={"/images/parks/3.jpeg"}
@@ -64,8 +70,8 @@ function FavParks() {
             </Link>
             <div className="favItemData">
               <div className="itD">
-                <span>حديقة المنتزه </span>
-                <span> الاسكندريه </span>
+                <span>{lang === "ar" ? "حديقة المنتزه" : "Montazah Park"}</span>
+                <span>{lang === "ar" ? "الإسكندرية" : "Alexandria"}</span>
               </div>
               <div className="itR">
                 <div className="rate">
@@ -75,7 +81,7 @@ function FavParks() {
                   <i className="fa-solid fa-star"></i>
                   <i className="fa-solid fa-star"></i>
                 </div>
-                <span>200 تقييم</span>
+                <span>{lang === "ar" ? "200 تقييم" : "200 Reviews"}</span>
               </div>
             </div>
           </div>
@@ -85,7 +91,7 @@ function FavParks() {
             </button>
             <Link href={"##"} className="favItemImage">
               <div className="overlay">
-                <span>عرض</span>
+                <span>{lang === "ar" ? "عرض" : "View"}</span>
               </div>
               <Image
                 src={"/images/parks/3.jpeg"}
@@ -103,8 +109,8 @@ function FavParks() {
             </Link>
             <div className="favItemData">
               <div className="itD">
-                <span>حديقة المنتزه </span>
-                <span> الاسكندريه </span>
+                <span>{lang === "ar" ? "حديقة المنتزه" : "Montazah Park"}</span>
+                <span>{lang === "ar" ? "الإسكندرية" : "Alexandria"}</span>
               </div>
               <div className="itR">
                 <div className="rate">
@@ -114,7 +120,7 @@ function FavParks() {
                   <i className="fa-solid fa-star"></i>
                   <i className="fa-solid fa-star"></i>
                 </div>
-                <span>200 تقييم</span>
+                <span>{lang === "ar" ? "200 تقييم" : "200 Reviews"}</span>
               </div>
             </div>
           </div>
@@ -124,7 +130,7 @@ function FavParks() {
             </button>
             <Link href={"##"} className="favItemImage">
               <div className="overlay">
-                <span>عرض</span>
+                <span>{lang === "ar" ? "عرض" : "View"}</span>
               </div>
               <Image
                 src={"/images/parks/3.jpeg"}
@@ -142,8 +148,8 @@ function FavParks() {
             </Link>
             <div className="favItemData">
               <div className="itD">
-                <span>حديقة المنتزه </span>
-                <span> الاسكندريه </span>
+                <span>{lang === "ar" ? "حديقة المنتزه" : "Montazah Park"}</span>
+                <span>{lang === "ar" ? "الإسكندرية" : "Alexandria"}</span>
               </div>
               <div className="itR">
                 <div className="rate">
@@ -153,7 +159,7 @@ function FavParks() {
                   <i className="fa-solid fa-star"></i>
                   <i className="fa-solid fa-star"></i>
                 </div>
-                <span>200 تقييم</span>
+                <span>{lang === "ar" ? "200 تقييم" : "200 Reviews"}</span>
               </div>
             </div>
           </div>
@@ -163,7 +169,7 @@ function FavParks() {
             </button>
             <Link href={"##"} className="favItemImage">
               <div className="overlay">
-                <span>عرض</span>
+                <span>{lang === "ar" ? "عرض" : "View"}</span>
               </div>
               <Image
                 src={"/images/parks/3.jpeg"}
@@ -181,8 +187,8 @@ function FavParks() {
             </Link>
             <div className="favItemData">
               <div className="itD">
-                <span>حديقة المنتزه </span>
-                <span> الاسكندريه </span>
+                <span>{lang === "ar" ? "حديقة المنتزه" : "Montazah Park"}</span>
+                <span>{lang === "ar" ? "الإسكندرية" : "Alexandria"}</span>
               </div>
               <div className="itR">
                 <div className="rate">
@@ -192,7 +198,7 @@ function FavParks() {
                   <i className="fa-solid fa-star"></i>
                   <i className="fa-light fa-star"></i>
                 </div>
-                <span>200 تقييم</span>
+                <span>{lang === "ar" ? "200 تقييم" : "200 Reviews"}</span>
               </div>
             </div>
           </div>
@@ -202,7 +208,7 @@ function FavParks() {
             </button>
             <Link href={"##"} className="favItemImage">
               <div className="overlay">
-                <span>عرض</span>
+                <span>{lang === "ar" ? "عرض" : "View"}</span>
               </div>
               <Image
                 src={"/images/parks/3.jpeg"}
@@ -220,8 +226,8 @@ function FavParks() {
             </Link>
             <div className="favItemData">
               <div className="itD">
-                <span>حديقة المنتزه </span>
-                <span> الاسكندريه </span>
+                <span>{lang === "ar" ? "حديقة المنتزه" : "Montazah Park"}</span>
+                <span>{lang === "ar" ? "الإسكندرية" : "Alexandria"}</span>
               </div>
               <div className="itR">
                 <div className="rate">
@@ -231,7 +237,7 @@ function FavParks() {
                   <i className="fa-solid fa-star"></i>
                   <i className="fa-solid fa-star"></i>
                 </div>
-                <span>200 تقييم</span>
+                <span>{lang === "ar" ? "200 تقييم" : "200 Reviews"}</span>
               </div>
             </div>
           </div>
@@ -241,7 +247,7 @@ function FavParks() {
             </button>
             <Link href={"##"} className="favItemImage">
               <div className="overlay">
-                <span>عرض</span>
+                <span>{lang === "ar" ? "عرض" : "View"}</span>
               </div>
               <Image
                 src={"/images/parks/3.jpeg"}
@@ -259,8 +265,8 @@ function FavParks() {
             </Link>
             <div className="favItemData">
               <div className="itD">
-                <span>حديقة المنتزه </span>
-                <span> الاسكندريه </span>
+                <span>{lang === "ar" ? "حديقة المنتزه" : "Montazah Park"}</span>
+                <span>{lang === "ar" ? "الإسكندرية" : "Alexandria"}</span>
               </div>
               <div className="itR">
                 <div className="rate">
@@ -270,7 +276,7 @@ function FavParks() {
                   <i className="fa-solid fa-star"></i>
                   <i className="fa-solid fa-star"></i>
                 </div>
-                <span>200 تقييم</span>
+                <span>{lang === "ar" ? "200 تقييم" : "200 Reviews"}</span>
               </div>
             </div>
           </div>

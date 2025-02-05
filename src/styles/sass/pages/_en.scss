@@ -1,0 +1,11 @@
+.ltr {
+  .authContainer {
+    flex-direction: row-reverse;
+  }
+  .footer {
+    ul {
+      margin: 0 !important;
+      padding: 0 !important;
+    }
+  }
+}

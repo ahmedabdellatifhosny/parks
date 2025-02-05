@@ -51,15 +51,17 @@ const ForgotCode: React.FC<ForgotCodeProps> = ({ setIsCodeValid }) => {
 
   return (
     <div className="form">
-      <Link href={`/${lang}`}  className="logo">
+      <Link href={`/${lang}`} className="logo">
         <Image
-          src={"/images/logo-green.png"}
+          src={
+            lang === "ar" ? "/images/logo-green.png" : "/images/logo-green-en.png"
+          }
           width={180}
           height={130}
           alt="logo"
         />
       </Link>
-      <h2>التحقق من الكود</h2>
+      <h2>{lang === "ar" ? "التحقق من الكود" : "Verify Code"}</h2>
       <div className="w500 inputs">
         <div className="otpInputs">
           {code.map((value, index) => (
@@ -85,13 +87,14 @@ const ForgotCode: React.FC<ForgotCodeProps> = ({ setIsCodeValid }) => {
               setIsCodeValid(true);
             }}
           >
-            تأكيد
+            {lang === "ar" ? "تأكيد" : "Confirm"}
           </button>
         </div>
         <div className="forgotAndRem jcc">
           <div className="forgot resend">
             <button>
-              لم تستلم الكود؟ <span>أعد إرساله</span>
+              {lang === "ar" ? "لم تستلم الكود؟" : "Didn't receive the code?"}{" "}
+              <span>{lang === "ar" ? "أعد إرساله" : "Resend"}</span>
             </button>
           </div>
         </div>

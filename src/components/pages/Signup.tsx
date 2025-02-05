@@ -1,4 +1,4 @@
-'use client'
+"use client";
 import Image from "next/image";
 import Link from "next/link";
 import { useLocale } from "next-intl";
@@ -11,37 +11,64 @@ function Signup() {
       <div className="form">
         <Link href={`/${lang}`} className="logo">
           <Image
-            src={"/images/logo-green.png"}
+            src={
+              lang === "ar"
+                ? "/images/logo-green.png"
+                : "/images/logo-green-en.png"
+            }
             width={180}
             height={130}
             alt="logo"
           />
         </Link>
-        <h2> إنشاء حساب</h2>
+        <h2>{lang === "ar" ? "إنشاء حساب" : "Sign Up"}</h2>
         <div className="w500 inputs">
           <div className="input">
-            <span>الاسم</span>
-            <input type="text" placeholder="ادخل اسمك بالكامل" />
+            <span>{lang === "ar" ? "الاسم" : "Name"}</span>
+            <input
+              type="text"
+              placeholder={
+                lang === "ar" ? "ادخل اسمك بالكامل" : "Enter your full name"
+              }
+            />
           </div>
           <div className="input">
-            <span>البريد الالكتروني</span>
-            <input type="email" placeholder="ادخل البريد الالكتروني" />
+            <span>{lang === "ar" ? "البريد الالكتروني" : "Email"}</span>
+            <input
+              type="email"
+              placeholder={
+                lang === "ar" ? "ادخل البريد الالكتروني" : "Enter your email"
+              }
+            />
           </div>
           <div className="input">
-            <span>كلمة المرور</span>
-            <input type="password" placeholder="ادخل كلمة المرور الخاصه بك " />
+            <span>{lang === "ar" ? "كلمة المرور" : "Password"}</span>
+            <input
+              type="password"
+              placeholder={
+                lang === "ar"
+                  ? "ادخل كلمة المرور الخاصه بك"
+                  : "Enter your password"
+              }
+            />
           </div>
           <div className="forgotAndRem">
             <div className="rem">
               <input type="checkbox" id="rem" defaultChecked={true} />
-              <label htmlFor="rem">أوافق علي جميع الشروط والأحكام </label>
+              <label htmlFor="rem">
+                {lang === "ar"
+                  ? "أوافق علي جميع الشروط والأحكام"
+                  : "I agree to all terms and conditions"}
+              </label>
             </div>
           </div>
           <div className="submitbtn">
-            <button type="submit"> إنشاء حساب</button>
+            <button type="submit">
+              {lang === "ar" ? "إنشاء حساب" : "Sign Up"}
+            </button>
           </div>
           <div className="or">
-            <span> أو</span>
+            <span>{lang === "ar" ? "أو" : "Or"}</span>
           </div>
           <div className="logWith">
             <button className="icon">
@@ -70,7 +97,10 @@ function Signup() {
             </button>
           </div>
           <div className="do">
-            هل لديك حساب؟ <Link href={`/${lang}/signin`}> تسجيل الدخول</Link>
+            {lang === "ar" ? "هل لديك حساب؟" : "Already have an account?"}{" "}
+            <Link href={`/${lang}/signin`}>
+              {lang === "ar" ? "تسجيل الدخول" : "Login"}
+            </Link>
           </div>
         </div>
       </div>

@@ -4,8 +4,10 @@ import Image from "next/image";
 import Pagination from "../Pagination";
 import { useState } from "react";
 import { Container } from "react-bootstrap";
+import { useLocale } from "next-intl";
 
 function NewsAndEvents() {
+  const lang = useLocale();
   const [activePage, setActivePage] = useState<number>(1);
   const [totalPages, setTotalPages] = useState<number>(4);
   const handlePageChange = (page: number) => {
@@ -20,7 +22,7 @@ function NewsAndEvents() {
     <>
       <section className="hero">
         <div className="titlepage">
-          <h2> اخبار الحدائق والفاعليات</h2>
+          <h2> {lang === 'ar' ?'اخبار الحدائق والفاعليات' : 'Parks news and events'}</h2>
         </div>
         <div className="image-clip-path">
           <Image src="/images/image-clip-path.svg" fill alt="logo" />
