@@ -39,7 +39,7 @@ export default function NavbarMenu() {
               <Link href={`/${lang}/favorites`} className={activeLink === "favorites" ? "active" : ""}>
                 {t("favorites")}
               </Link>
-              <Link href={`/${lang}/news-and-events`} className={activeLink === "news" ? "active" : ""}>
+              <Link href={`/${lang}/news-and-events`} className={activeLink === "news-and-events" ? "active" : ""}>
                 {t("news")}
               </Link>
               <Link href={`/${lang}/reservations`} className={activeLink === "reservations" ? "active" : ""}>
