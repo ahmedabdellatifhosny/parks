@@ -4,7 +4,6 @@ import { getRequestConfig, type RequestConfig } from "next-intl/server";
 import { locales } from "./routing";
 
 export default getRequestConfig(async ({ locale }): Promise<RequestConfig> => {
-  // Ensure locale is valid
   if (!locales.includes(locale as (typeof locales)[number])) {
     notFound();
   }

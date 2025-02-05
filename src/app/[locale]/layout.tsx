@@ -4,13 +4,7 @@ import NavbarMenu from "@/components/layout/NavbarMenu";
 import Footer from "@/components/layout/Footer";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "../../styles/globals.scss";
-import { cookies } from "next/headers";
 
-export async function getRequestConfig() {
-  const locale = (await cookies()).get("NEXT_LOCALE") || "ar";
-  console.log("locale:", locale);
-  return { locale };
-}
 
 interface Params {
   locale: string;
@@ -25,10 +19,10 @@ export default async function RootLayout({
 }) {
   let messages: Record<string, string>;
   try {
-    messages = (await import(`../../i18n/locales/${locale}.json`)).default;
+    messages = (await import(`../../../messages/${locale}.json`)).default;
   } catch (error) {
     console.error(error);
-    messages = (await import(`../../i18n/locales/ar.json`)).default;
+    messages = (await import(`../../../messages/ar.json`)).default;
   }
 
   if (process.env.NODE_ENV === "production") {
@@ -48,7 +42,10 @@ export default async function RootLayout({
           href="https://site-assets.fontawesome.com/releases/v6.4.2/css/all.css"
         />
       </head>
-      <body dir={locale === "ar" ? "rtl" : "ltr"} className={locale === "ar" ? "rtl" : "ltr"}>
+      <body
+        dir={locale === "ar" ? "rtl" : "ltr"}
+        className={locale === "ar" ? "rtl" : "ltr"}
+      >
         <NextIntlClientProvider locale={locale} messages={messages}>
           <NavbarMenu />
           {children}
