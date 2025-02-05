@@ -1,19 +1,22 @@
+import { useLocale } from "next-intl";
 import Image from "next/image";
+import Link from "next/link";
 interface ForgotMailProps {
   setIsCodeSent: (value: boolean) => void;
 }
 
 const ForgotMail: React.FC<ForgotMailProps> = ({ setIsCodeSent }) => {
+  const lang = useLocale();
   return (
     <div className="form">
-      <div className="logo">
+      <Link href={`/${lang}`} className="logo">
         <Image
           src={"/images/logo-green.png"}
           width={180}
           height={130}
           alt="logo"
         />
-      </div>
+      </Link>
       <h2> نسيت كلمة المرور</h2>
       <div className="w500 inputs">
         <div className="input">

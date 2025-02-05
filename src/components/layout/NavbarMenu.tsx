@@ -1,26 +1,28 @@
 "use client";
+import { useLocale, useTranslations } from "next-intl";
 import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import Image from "next/image";
-import { faGlobe } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faUser } from "@fortawesome/free-solid-svg-icons/faUser";
+import { faGlobe, faUser } from "@fortawesome/free-solid-svg-icons";
 import Link from "next/link";
-import { useEffect, useState } from "react";
 import { usePathname } from "next/navigation";
 
 export default function NavbarMenu() {
-  const [activeLink, setActiveLink] = useState("home");
   const pathname = usePathname();
-  useEffect(() => {
-    setActiveLink(pathname.split("/")[1] || "home");
-  }, [pathname]);
+  const lang = useLocale();
+  const t = useTranslations();
+
+  console.log("Current Locale:", lang);
+  console.log("Translation for Home:", t("home")); // Debugging
+
+  const activeLink = pathname.split("/")[2] || lang;
 
   if (
-    pathname === "/signin" ||
-    pathname === "/signup" ||
-    pathname === "/forgot-password"
+    pathname === `/${lang}/signin` ||
+    pathname === `/${lang}/signup` ||
+    pathname === `/${lang}/forgot-password`
   ) {
     return null;
   }
@@ -29,60 +31,40 @@ export default function NavbarMenu() {
     <section className="navbarmenu">
       <Container>
         <Navbar expand="lg" className="bg-body-tertiary" fixed="top">
-          <Link href="/">
+          <Link href={`/${lang}`}>
             <Image src="/images/logo.png" alt="logo" width={150} height={80} />
           </Link>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="mx-auto">
-              <Link
-                href="/"
-                className={activeLink === "home" ? "active" : ""}
-                onClick={() => setActiveLink("home")}
-              >
-                الصفحه الرئيسية
+              <Link href={`/${lang}`} className={activeLink === lang ? "active" : "not"}>
+                {t("home")}
               </Link>
-              <Link
-                href="/favorites"
-                className={activeLink === "favorites" ? "active" : ""}
-                onClick={() => setActiveLink("favorites")}
-              >
-                الحدائق المفضلة
+              <Link href={`/${lang}/favorites`} className={activeLink === "favorites" ? "active" : ""}>
+                {t("favorites")}
               </Link>
-              <Link
-                href="/news-and-events"
-                className={activeLink === "news-and-events" ? "active" : ""}
-                onClick={() => setActiveLink("news-and-events")}
-              >
-                اخبار الحدائق والفاعليات{" "}
+              <Link href={`/${lang}/news`} className={activeLink === "news" ? "active" : ""}>
+                {t("news")}
               </Link>
-              <Link
-                href="/"
-                className={activeLink === "reservations" ? "active" : ""}
-                onClick={() => setActiveLink("reservations")}
-              >
-                الحجوزات
+              <Link href={`/${lang}/reservations`} className={activeLink === "reservations" ? "active" : ""}>
+                {t("reservations")}
               </Link>
-              <Link
-                href="/"
-                className={activeLink === "map" ? "active" : ""}
-                onClick={() => setActiveLink("map")}
-              >
-                الخريطة
+              <Link href={`/${lang}/map`} className={activeLink === "map" ? "active" : ""}>
+                {t("map")}
               </Link>
             </Nav>
             <ul className="d-flex align-items-center mt-3">
               <li>
                 <div className="langs ms-2">
                   <FontAwesomeIcon icon={faGlobe} />
-                  <span className="me-2">اللغة العربية</span>
+                  <span className="me-2">{t("language")}</span>
                 </div>
               </li>
               <li>
                 <div className="logs">
-                  <Link href="/signin">
+                  <Link href={`/${lang}/signin`}>
                     <FontAwesomeIcon icon={faUser} />
-                    <span className="me-2"> تسجيل الدخول</span>
+                    <span className="me-2">{t("login")}</span>
                   </Link>
                 </div>
               </li>

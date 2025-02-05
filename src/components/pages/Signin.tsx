@@ -1,8 +1,10 @@
-import React from 'react'
+'use client'
 import Image from "next/image";
 import Link from "next/link";
+import { useLocale } from 'next-intl';
 
 function Signin() {
+  const lang = useLocale();
   return (
     <div className="authContainer">
       <div className="image">
@@ -14,14 +16,14 @@ function Signin() {
         />
       </div>
       <div className="form">
-        <div className="logo">
+        <Link href={`/${lang}`} className="logo">
           <Image
             src={"/images/logo-green.png"}
             width={180}
             height={130}
             alt="logo"
           />
-        </div>
+        </Link>
         <h2>تسجيل دخول</h2>
         <div className="w500 inputs">
           <div className="input">
@@ -38,7 +40,7 @@ function Signin() {
               <label htmlFor="rem">تذكر كلمة المرور</label>
             </div>
             <div className="forgot">
-              <Link href={"/forgot-password"}>هل نسيت كلمة المرور؟</Link>
+              <Link href={`/${lang}/forgot-password`}>هل نسيت كلمة المرور؟</Link>
             </div>
           </div>
           <div className="submitbtn">
@@ -74,7 +76,7 @@ function Signin() {
             </button>
           </div>
           <div className="do">
-            ليس لديك حساب؟ <Link href="/signup"> أنشئ حساب</Link>
+            ليس لديك حساب؟ <Link href={`/${lang}/signup`}> أنشئ حساب</Link>
           </div>
         </div>
       </div>

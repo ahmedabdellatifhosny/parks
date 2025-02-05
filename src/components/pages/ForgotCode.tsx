@@ -1,5 +1,7 @@
 "use client";
+import { useLocale } from "next-intl";
 import Image from "next/image";
+import Link from "next/link";
 import { useState } from "react";
 interface ForgotCodeProps {
   setIsCodeSent: (value: boolean) => void;
@@ -7,6 +9,7 @@ interface ForgotCodeProps {
 }
 
 const ForgotCode: React.FC<ForgotCodeProps> = ({ setIsCodeValid }) => {
+  const lang = useLocale();
   const [code, setCode] = useState<string[]>(Array(4).fill(""));
 
   const handleInputChange = (
@@ -48,14 +51,14 @@ const ForgotCode: React.FC<ForgotCodeProps> = ({ setIsCodeValid }) => {
 
   return (
     <div className="form">
-      <div className="logo">
+      <Link href={`/${lang}`}  className="logo">
         <Image
           src={"/images/logo-green.png"}
           width={180}
           height={130}
           alt="logo"
         />
-      </div>
+      </Link>
       <h2>التحقق من الكود</h2>
       <div className="w500 inputs">
         <div className="otpInputs">

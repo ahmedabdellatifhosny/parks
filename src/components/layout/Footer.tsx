@@ -10,15 +10,15 @@ import {
 } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Link from "next/link";
+import { useLocale } from "next-intl";
 
 export default function Footer() {
   const pathname = usePathname();
-  console.log(pathname);
-
+  const lang = useLocale();
   if (
-    pathname === "/signin" ||
-    pathname === "/signup" ||
-    pathname === "/forgot-password"
+    pathname === `/${lang}/signin` ||
+    pathname === `/${lang}/signup` ||
+    pathname === `/${lang}/forgot-password`
   ) {
     return null;
   }
