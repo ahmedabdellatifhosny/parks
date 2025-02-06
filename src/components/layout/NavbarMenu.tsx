@@ -12,8 +12,20 @@ import { usePathname } from "next/navigation";
 export default function NavbarMenu() {
   const pathname = usePathname();
   const lang = useLocale();
-  const t = useTranslations();
+  const t = useTranslations('Navbar');
   const activeLink = pathname.split("/")[2] || lang;
+
+  const getOppositeLocale = (currentLocale:string) => {
+    return currentLocale === 'en' ? 'ar' : 'en';
+  };
+
+  const getNewPath = (currentPath:string, currentLocale:string) => {
+    const oppositeLocale = getOppositeLocale(currentLocale);
+    const pathWithoutLocale = currentPath.split('/').slice(2).join('/');
+    return `/${oppositeLocale}/${pathWithoutLocale}`;
+  };
+
+  const newPath = getNewPath(pathname, lang);
 
   if (
     pathname === `/${lang}/signin` ||
@@ -67,7 +79,7 @@ export default function NavbarMenu() {
             <ul className="d-flex align-items-center mt-3">
               <li>
                 <Link
-                  href={lang === "ar" ? "/en" : "/ar"}
+                  href={newPath}
                   className="langs ms-2"
                 >
                   <FontAwesomeIcon icon={faGlobe} />
