@@ -78,13 +78,13 @@ export default function NavbarMenu() {
             </Nav>
             <ul className="d-flex align-items-center mt-3">
               <li>
-                <Link
+                <a
                   href={newPath}
                   className="langs ms-2"
                 >
                   <FontAwesomeIcon icon={faGlobe} />
                   <span className="mx-2">{t("language")}</span>
-                </Link>
+                </a>
               </li>
               <li>
                 <div className="logs">
