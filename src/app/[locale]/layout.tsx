@@ -5,7 +5,6 @@ import Footer from "@/components/layout/Footer";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "../../styles/globals.scss";
 
-
 interface Params {
   locale: string;
 }
@@ -17,12 +16,12 @@ export default async function RootLayout({
   children: React.ReactNode;
   params: Params;
 }) {
-  let messages: Record<string, string>;
+  let messages: Record<string, string> = {}; // Initialize with an empty object
+
   try {
     messages = (await import(`../../../messages/${locale}.json`)).default;
   } catch (error) {
-    console.error(error);
-    messages = (await import(`../../../messages/ar.json`)).default;
+    console.error(`Error loading messages for locale ${locale}:`, error);
   }
 
   if (process.env.NODE_ENV === "production") {
@@ -32,6 +31,7 @@ export default async function RootLayout({
     console.info = () => {};
     console.debug = () => {};
   }
+
   return (
     <html lang={locale}>
       <head>
@@ -42,10 +42,7 @@ export default async function RootLayout({
           href="https://site-assets.fontawesome.com/releases/v6.4.2/css/all.css"
         />
       </head>
-      <body
-        dir={locale === "ar" ? "rtl" : "ltr"}
-        className={locale === "ar" ? "rtl" : "ltr"}
-      >
+      <body dir={locale === "ar" ? "rtl" : "ltr"} className={locale === "ar" ? "rtl" : "ltr"}>
         <NextIntlClientProvider locale={locale} messages={messages}>
           <NavbarMenu />
           {children}
