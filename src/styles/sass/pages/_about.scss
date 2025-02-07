@@ -33,6 +33,16 @@
       font-size: 1rem;
     }
   }
+  span {
+    font-size: 1.2rem;
+    span,
+    a {
+      color: $primary-color;
+    }
+    @media (max-width: 800px) {
+      font-size: 1rem;
+    }
+  }
 }
 .images {
   gap: 40px;
@@ -84,6 +94,124 @@
     .image {
       width: 100%;
       margin: 0 auto;
+    }
+  }
+}
+
+.stepsCards {
+  width: 100%;
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.scard {
+  max-width: 330px;
+  width: 100%;
+  @include flex();
+  flex-direction: column;
+  gap: 20px;
+  padding: 50px 30px;
+  background: #ffffff;
+  border: 1px solid #f5f5f5;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 30px;
+  p {
+    color: rgba(138, 138, 138, 1);
+    font-size: 1.2rem;
+    text-align: center;
+    padding: 0 10px;
+    @media (max-width: 800px) {
+      font-size: 1rem;
+      padding: 0;
+    }
+  }
+  h3 {
+    width: 80px;
+    height: 70px;
+    border-radius: 8px;
+    background-color: rgba(0, 113, 45, 1);
+    color: #fff;
+    @include flex;
+  }
+}
+@media (max-width: 800px) {
+  .scard {
+    max-width: 100%;
+    padding: 30px 20px;
+  }
+}
+
+.ulList {
+  width: 100%;
+  @include flex;
+  gap: 75px;
+  flex-wrap: wrap;
+  padding-bottom: 70px;
+}
+.ullItem {
+  width: 500px;
+  ul {
+    list-style: disc;
+    padding: 30px 20px;
+    li {
+      padding-top: 7px;
+      font-size: 1.2rem;
+      color: rgba(138, 138, 138, 1);
+    }
+  }
+}
+.imageli {
+  width: 100%;
+  @include flex;
+  border-radius: 25px;
+  overflow: hidden;
+  height: 330px;
+  position: relative;
+
+  img {
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  h2 {
+    position: absolute;
+    z-index: 3;
+    color: #fff;
+    padding: 0 20px;
+    text-align: center;
+    width: 100%;
+  }
+  &::after {
+    content: "";
+    position: absolute;
+    z-index: 2;
+    width: 100%;
+    height: 100%;
+    background-color: #00000060;
+  }
+}
+@media (max-width: 600px) {
+  .ulList{
+    gap: 0;
+  }
+  .scard{
+    border-radius: 15px;
+  }
+  .ullItem{
+    ul{
+      li{
+        font-size: 1rem;
+      }
+    }
+  }
+  .imageli {
+    border-radius: 15px;
+    height: 250px;
+    h2{
+      font-size: 1.3rem;
     }
   }
 }

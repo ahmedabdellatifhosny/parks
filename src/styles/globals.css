@@ -1405,6 +1405,18 @@ ul {
     font-size: 1rem;
   }
 }
+.contentText span {
+  font-size: 1.2rem;
+}
+.contentText span span,
+.contentText span a {
+  color: #00712d;
+}
+@media (max-width: 800px) {
+  .contentText span {
+    font-size: 1rem;
+  }
+}
 
 .images {
   gap: 40px;
@@ -1461,6 +1473,133 @@ ul {
   .flex50 .image {
     width: 100%;
     margin: 0 auto;
+  }
+}
+.stepsCards {
+  width: 100%;
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.scard {
+  max-width: 330px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+  padding: 50px 30px;
+  background: #ffffff;
+  border: 1px solid #f5f5f5;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 30px;
+}
+.scard p {
+  color: rgb(138, 138, 138);
+  font-size: 1.2rem;
+  text-align: center;
+  padding: 0 10px;
+}
+@media (max-width: 800px) {
+  .scard p {
+    font-size: 1rem;
+    padding: 0;
+  }
+}
+.scard h3 {
+  width: 80px;
+  height: 70px;
+  border-radius: 8px;
+  background-color: rgb(0, 113, 45);
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (max-width: 800px) {
+  .scard {
+    max-width: 100%;
+    padding: 30px 20px;
+  }
+}
+.ulList {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 75px;
+  flex-wrap: wrap;
+  padding-bottom: 70px;
+}
+
+.ullItem {
+  width: 500px;
+}
+.ullItem ul {
+  list-style: disc;
+  padding: 30px 20px;
+}
+.ullItem ul li {
+  padding-top: 7px;
+  font-size: 1.2rem;
+  color: rgb(138, 138, 138);
+}
+
+.imageli {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 25px;
+  overflow: hidden;
+  height: 330px;
+  position: relative;
+}
+.imageli img {
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.imageli h2 {
+  position: absolute;
+  z-index: 3;
+  color: #fff;
+  padding: 0 20px;
+  text-align: center;
+  width: 100%;
+}
+.imageli::after {
+  content: "";
+  position: absolute;
+  z-index: 2;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3764705882);
+}
+
+@media (max-width: 600px) {
+  .ulList {
+    gap: 0;
+  }
+  .scard {
+    border-radius: 15px;
+  }
+  .ullItem ul li {
+    font-size: 1rem;
+  }
+  .imageli {
+    border-radius: 15px;
+    height: 250px;
+  }
+  .imageli h2 {
+    font-size: 1.3rem;
   }
 }
 .wrapper-404 {
