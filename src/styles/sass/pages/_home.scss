@@ -1,0 +1,13 @@
+.pb30 {
+  padding-bottom: 30px !important;
+}
+.user-select-none {
+  user-select: none;
+}
+@media (max-width:480px) {
+  .swiper{
+    .favItem{
+      margin: 0 auto !important;
+    }
+  }
+}

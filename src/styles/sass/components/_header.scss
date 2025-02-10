@@ -54,7 +54,7 @@
     color: $primary-color;
     position: absolute;
     top: 32%;
-    left: 39%;
+    left: calc(39% + 20px);
   }
   .btn-success {
     display: flex;
@@ -117,6 +117,7 @@
 .hero {
   position: relative;
   height: 95vh;
+  overflow: hidden;
   @media (max-width: 800px) {
     height: 60vh;
   }

@@ -42,7 +42,7 @@ export default async function RootLayout({
           href="https://site-assets.fontawesome.com/releases/v6.4.2/css/all.css"
         />
       </head>
-      <body dir={locale === "ar" ? "rtl" : "ltr"} className={locale === "ar" ? "rtl" : "ltr"}>
+      <body cz-shortcut-listen="false" dir={locale === "ar" ? "rtl" : "ltr"} className={locale === "ar" ? "rtl" : "ltr"}>
         <NextIntlClientProvider locale={locale} messages={messages}>
           <NavbarMenu />
           {children}

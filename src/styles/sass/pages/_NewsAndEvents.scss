@@ -13,6 +13,7 @@
     color: $primary-color;
     border-radius: 30px;
     font-size: 1.3rem;
+    text-transform: capitalize;
   }
 }
 .h2 {
@@ -135,8 +136,8 @@
   .nande {
     flex-direction: column;
     img {
-      width: 100%  !important;
-      aspect-ratio:initial;
+      width: 100% !important;
+      aspect-ratio: initial;
     }
   }
   .nandeD {
@@ -176,6 +177,9 @@
   }
   .search-form {
     position: relative;
+    .fa-magnifying-glass {
+      left: 39%;
+    }
   }
 }
 .ptb50 {
@@ -190,6 +194,11 @@
   border-radius: 25px;
   padding: 15px 10px;
   position: relative;
+  user-select: none;
+  overflow: hidden;
+  @media (max-width: 350px) {
+    width: 100%;
+  }
 }
 
 .likeItemBtn {
@@ -211,6 +220,7 @@
   width: 100%;
   height: 220px;
   overflow: hidden;
+  user-select: none;
   @include flex();
   margin: 0;
   position: relative;
@@ -308,4 +318,35 @@
   gap: 40px;
   flex-wrap: wrap;
   padding-bottom: 100px;
+}
+.item2 {
+  .favItemImage {
+    height: 180px;
+    padding: 20px;
+    width: calc(100% - 10px);
+    margin: 0 auto;
+    margin-bottom: 20px;
+    img {
+      width: 100%;
+      border-radius: 20px;
+    }
+  }
+}
+.addBtn {
+  width: 100%;
+  display: flex;
+  button {
+    background-color: rgba(255, 193, 69, 1);
+    @include flex;
+    color: #fff;
+    gap: 10px;
+    padding: 0 25px;
+    height: 45px;
+    border-radius: 20px;
+    color: #fff;
+    i {
+      font-size: 1.5rem;
+      color: #fff;
+    }
+  }
 }

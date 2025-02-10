@@ -98,7 +98,7 @@ ul {
   color: #00712d;
   position: absolute;
   top: 32%;
-  left: 39%;
+  left: calc(39% + 20px);
 }
 .search-form .btn-success {
   display: flex;
@@ -157,6 +157,7 @@ ul {
 .hero {
   position: relative;
   height: 95vh;
+  overflow: hidden;
 }
 @media (max-width: 800px) {
   .hero {
@@ -401,10 +402,10 @@ ul {
 .nearest .read-more {
   cursor: pointer;
 }
-.nearest .read-more p {
+.nearest .read-more p, .nearest .read-more a {
   color: #1a4d2e;
 }
-.nearest .read-more p:hover {
+.nearest .read-more p:hover, .nearest .read-more a:hover {
   color: #ffc145;
 }
 
@@ -461,10 +462,10 @@ ul {
 .famous-parks .read-more {
   cursor: pointer;
 }
-.famous-parks .read-more p {
+.famous-parks .read-more p, .famous-parks .read-more a {
   color: #1a4d2e;
 }
-.famous-parks .read-more p:hover {
+.famous-parks .read-more p:hover, .famous-parks .read-more a:hover {
   color: #ffc145;
 }
 
@@ -521,11 +522,11 @@ ul {
   font-size: 18px;
   margin-bottom: 0;
 }
-.news .read-more p {
+.news .read-more p, .news .read-more a {
   color: #1a4d2e;
   cursor: pointer;
 }
-.news .read-more p:hover {
+.news .read-more p:hover, .news .read-more a:hover {
   color: #ffc145;
 }
 
@@ -715,6 +716,21 @@ ul {
   padding-top: 25px;
 }
 
+.pb30 {
+  padding-bottom: 30px !important;
+}
+
+.user-select-none {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}
+
+@media (max-width: 480px) {
+  .swiper .favItem {
+    margin: 0 auto !important;
+  }
+}
 .authContainer {
   width: 100%;
   display: flex;
@@ -1045,6 +1061,7 @@ ul {
   color: #00712d;
   border-radius: 30px;
   font-size: 1.3rem;
+  text-transform: capitalize;
 }
 
 .h2 {
@@ -1220,6 +1237,9 @@ ul {
 .pr .search-form {
   position: relative;
 }
+.pr .search-form .fa-magnifying-glass {
+  left: 39%;
+}
 
 .ptb50 {
   padding-top: 50px;
@@ -1234,6 +1254,15 @@ ul {
   border-radius: 25px;
   padding: 15px 10px;
   position: relative;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  overflow: hidden;
+}
+@media (max-width: 350px) {
+  .favItem {
+    width: 100%;
+  }
 }
 
 .likeItemBtn {
@@ -1259,6 +1288,9 @@ ul {
   width: 100%;
   height: 220px;
   overflow: hidden;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1363,6 +1395,39 @@ ul {
   gap: 40px;
   flex-wrap: wrap;
   padding-bottom: 100px;
+}
+
+.item2 .favItemImage {
+  height: 180px;
+  padding: 20px;
+  width: calc(100% - 10px);
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+.item2 .favItemImage img {
+  width: 100%;
+  border-radius: 20px;
+}
+
+.addBtn {
+  width: 100%;
+  display: flex;
+}
+.addBtn button {
+  background-color: rgb(255, 193, 69);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  gap: 10px;
+  padding: 0 25px;
+  height: 45px;
+  border-radius: 20px;
+  color: #fff;
+}
+.addBtn button i {
+  font-size: 1.5rem;
+  color: #fff;
 }
 
 .hero.hero75vh {

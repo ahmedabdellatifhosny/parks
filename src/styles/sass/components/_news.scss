@@ -42,7 +42,7 @@
     }
   }
   .read-more {
-    p {
+    p,a {
       color: $dark-primary-color;
       cursor: pointer;
       &:hover {

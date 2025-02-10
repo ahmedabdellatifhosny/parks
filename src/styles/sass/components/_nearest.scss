@@ -113,7 +113,7 @@
 
   .read-more {
     cursor: pointer;
-    p {
+    p,a {
       color: $dark-primary-color;
       &:hover {
         color: $hover-color;
