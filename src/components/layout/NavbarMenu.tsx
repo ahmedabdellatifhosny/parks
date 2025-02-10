@@ -8,25 +8,27 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGlobe, faUser } from "@fortawesome/free-solid-svg-icons";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import { useState } from "react";
 
 export default function NavbarMenu() {
   const pathname = usePathname();
   const lang = useLocale();
-  const t = useTranslations('Navbar');
+  const t = useTranslations("Navbar");
   const activeLink = pathname.split("/")[2] || lang;
 
-  const getOppositeLocale = (currentLocale:string) => {
-    return currentLocale === 'en' ? 'ar' : 'en';
+  const getOppositeLocale = (currentLocale: string) => {
+    return currentLocale === "en" ? "ar" : "en";
   };
 
-  const getNewPath = (currentPath:string, currentLocale:string) => {
+  const getNewPath = (currentPath: string, currentLocale: string) => {
     const oppositeLocale = getOppositeLocale(currentLocale);
-    const pathWithoutLocale = currentPath.split('/').slice(2).join('/');
+    const pathWithoutLocale = currentPath.split("/").slice(2).join("/");
     return `/${oppositeLocale}/${pathWithoutLocale}`;
   };
 
   const newPath = getNewPath(pathname, lang);
 
+  const [isToggled, setIsToggled] = useState(false);
   if (
     pathname === `/${lang}/signin` ||
     pathname === `/${lang}/signup` ||
@@ -38,11 +40,18 @@ export default function NavbarMenu() {
   return (
     <section className="navbarmenu">
       <Container>
-        <Navbar expand="lg" className="bg-body-tertiary" fixed="top">
+        <Navbar
+          expand="lg"
+          className={`bg-body-tertiary ${isToggled ? "br20" : ""}`}
+          fixed="top"
+        >
           <Link href={`/`}>
             <Image src="/images/logo.png" alt="logo" width={150} height={80} />
           </Link>
-          <Navbar.Toggle aria-controls="basic-navbar-nav" />
+          <Navbar.Toggle
+            aria-controls="basic-navbar-nav"
+            onClick={() => setIsToggled(!isToggled)}
+          />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="mx-auto">
               <Link
@@ -78,10 +87,7 @@ export default function NavbarMenu() {
             </Nav>
             <ul className="d-flex align-items-center mt-3">
               <li>
-                <a
-                  href={newPath}
-                  className="langs ms-2"
-                >
+                <a href={newPath} className="langs ms-2">
                   <FontAwesomeIcon icon={faGlobe} />
                   <span className="mx-2">{t("language")}</span>
                 </a>

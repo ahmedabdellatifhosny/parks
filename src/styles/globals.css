@@ -35,6 +35,12 @@ ul {
   list-style: none;
 }
 
+@media (max-width: 900px) {
+  .container {
+    max-width: 100% !important;
+    width: 100% !important;
+  }
+}
 .header {
   position: absolute;
   top: 65%;
@@ -111,6 +117,7 @@ ul {
   z-index: 100;
 }
 .navbarmenu .bg-body-tertiary {
+  transition: 0.3s all ease;
   background: #1a4d2e !important;
   top: 10px;
   width: calc(100% - 100px);
@@ -152,6 +159,37 @@ ul {
 .navbarmenu .logs:hover {
   color: #ffc145;
   cursor: pointer;
+}
+
+@media (max-width: 480px) {
+  .navbar-nav a {
+    width: -moz-fit-content;
+    width: fit-content;
+    padding: 5px 0 !important;
+  }
+}
+.br20 {
+  border-radius: 20px !important;
+}
+
+.navbar-toggler {
+  border: none;
+  transition: none;
+  color: transparent;
+}
+.navbar-toggler span {
+  border-color: #fff;
+  color: #fff;
+}
+
+.navbar-toggler {
+  border: none;
+  transition: none;
+  background-color: transparent;
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3E%3Cpath stroke='white' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
 }
 
 .hero {
@@ -1697,6 +1735,211 @@ ul {
 .wrapper-404 svg path,
 .wrapper-404 svg rect {
   fill: #fff;
+}
+
+.centeredh1 {
+  max-width: 600px;
+  text-align: center;
+  color: #00712d;
+  margin: 0 auto;
+  font-size: 1.8rem;
+  padding: 30px 0 50px 0;
+  line-height: 1.75;
+  font-weight: 600;
+}
+@media (max-width: 600px) {
+  .centeredh1 {
+    font-size: 1.3rem;
+  }
+}
+
+.reservationsInner {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding-bottom: 70px;
+}
+
+.reservation {
+  width: 100%;
+  display: flex;
+  gap: 50px;
+  padding: 40px;
+  border: 2px dashed rgb(217, 217, 217);
+  border-radius: 15px;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.rowData {
+  width: calc(100% - 400px);
+  display: flex;
+  flex-direction: column;
+  gap: 35px;
+}
+
+.rowItem {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+.rowItem span {
+  font-size: 1.1rem;
+}
+.rowItem span:nth-child(1) {
+  color: #000;
+  font-weight: 600;
+  white-space: nowrap;
+}
+.rowItem span:nth-child(2) {
+  color: rgb(138, 138, 138);
+}
+
+.qrdata {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 350px;
+}
+.qrdata img {
+  width: 150px;
+  height: 150px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.qrdata h3 {
+  font-size: 1rem;
+  color: rgb(138, 138, 138);
+  padding-top: 10px;
+  padding-bottom: 15px;
+}
+
+.printBtns {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+}
+.printBtns button {
+  width: 100%;
+  height: 45px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #000;
+  font-size: 1rem;
+  border: 1px solid #00712d;
+}
+.printBtns .fillBtn {
+  background-color: #00712d;
+  color: #fff;
+}
+
+@media (max-width: 900px) {
+  .reservation {
+    flex-direction: column;
+  }
+  .rowData {
+    width: 100%;
+  }
+}
+@media (max-width: 500px) {
+  .reservation {
+    padding: 20px;
+  }
+  .qrdata {
+    width: 100%;
+  }
+  .rowItem {
+    gap: 20px;
+  }
+  .rowItem span {
+    font-size: 1rem;
+  }
+}
+.map-container {
+  height: 600px;
+  width: 100%;
+  position: relative;
+  z-index: 1;
+}
+@media (max-width: 800px) {
+  .map-container {
+    height: 500px;
+  }
+}
+@media (max-width: 600px) {
+  .map-container {
+    height: 400px;
+  }
+}
+@media (max-width: 500px) {
+  .map-container {
+    height: 300px;
+  }
+}
+
+.leaflet-container {
+  z-index: 0 !important;
+  width: 100%;
+}
+
+.leaflet-popup-content {
+  font-size: 14px;
+  color: black; /* Override Bootstrap's color if necessary */
+}
+
+.mapInner {
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.popUpflex {
+  min-width: 400px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.popUpflex img {
+  width: 120px;
+  border-radius: 10px;
+  height: 80px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.parkpopdata {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+.parkpopdata .itR {
+  flex-direction: row-reverse !important;
+  align-items: center;
+  gap: 10px;
+}
+.parkpopdata ul {
+  width: 100%;
+  text-align: right;
+  padding-top: 10px;
+}
+.parkpopdata ul li {
+  padding-bottom: 5px;
+}
+
+.pt100 {
+  padding-top: 100px;
+}
+
+.pb20 {
+  padding-bottom: 20px !important;
 }
 
 .ltr .authContainer {

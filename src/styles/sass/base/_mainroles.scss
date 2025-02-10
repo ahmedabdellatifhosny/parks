@@ -28,3 +28,10 @@ button{
 ul {
   list-style: none;
 }
+
+@media (max-width:900px) {
+  .container {
+      max-width: 100% !important;
+      width: 100% !important;
+  }
+}
